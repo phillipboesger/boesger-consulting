@@ -121,7 +121,7 @@ title = "Bösger Digital"
 
 [params.homepage.social]
   linkedin = "https://www.linkedin.com/in/phillip-boesger-90691215a/"
-  github = "https://github.com/Rakees"
+  github = "https://github.com/phillipboesger"
 
 [build]
   writeStats = true
