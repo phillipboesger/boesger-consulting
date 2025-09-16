@@ -6,7 +6,7 @@ Welcome to the repository of **Bösger Digital** – the digital home of Phillip
 
 This site showcases my service portfolio, skills, and professional background. It is built with Hugo and features a modern, responsive design. The target audience is companies and teams seeking consulting, development, or automation in Polarion ALM, GitHub workflows, CI/CD, and AI.
 
-**Live:** [consulting.boesger.com](https://consulting.boesger.com)
+**Live:** [digital.boesger.com](https://digital.boesger.com)
 
 ## 💼 Services
 
