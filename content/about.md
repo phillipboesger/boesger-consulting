@@ -68,7 +68,7 @@ type: about
 
 Originally from Germany <span title="Germany" style="font-size:1.2em;">🇩🇪</span>, I'm a digital nomad, traveling the globe while seamlessly integrating my passion for technology, sports, and photography. My lifestyle fuels creativity, meticulous planning, and sharp attention to detail, ensuring every project aligns with my motto:
 
-> "Nothing is impossible—it's only a question of time and budget."
+> Nothing is impossible—it's only a question of time and budget.
 
 ## 📸 Beyond Work
 
