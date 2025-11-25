@@ -74,6 +74,8 @@ Originally from Germany <span title="Germany" style="font-size:1.2em;">🇩🇪<
 
 Outside of coding and consulting, you'll find me capturing moments through photography—visit my photography website at [photography.boesger.com](https://photography.boesger.com)—engaging in various sports, or exploring new destinations around the world. I firmly believe in balancing professional dedication with personal growth and experiences.
 
+I also run a blog at [polarion.boesger.com](https://polarion.boesger.com), where I share **updates, practical tips, and hands-on knowledge** around **Polarion ALM** and the **use of AI in everyday development work**. You'll find best practices, real-world examples, and ideas on how to combine Polarion, automation, and AI to get even more out of your engineering processes.
+
 ## 🎯 My Mission
 
 Delivering **high-quality, cost-effective solutions** tailored precisely to client needs. I'm committed to finding the optimal path to achieve your project's goals.
