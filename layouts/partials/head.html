@@ -34,6 +34,10 @@
   </script>
   {{ end }}
 
+  {{ with .Site.Params.authorImage }}
+  <link rel="preload" as="image" href="{{ . }}" />
+  {{ end }}
+
   {{- $popupjs := resources.Get "js/popup.js" | resources.Minify | fingerprint }}
   <script src="{{ $popupjs.RelPermalink }}" integrity="{{ $popupjs.Data.Integrity }}" defer></script>
 </head>

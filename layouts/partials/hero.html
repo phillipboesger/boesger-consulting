@@ -2,7 +2,7 @@
   {{ $authorName := .Site.Params.author }}
   {{ with .Site.Params.authorImage }}
   <div class="w-48 h-48 rounded-full mb-6">
-    <img src="{{.}}" class="w-full p-2 h-full object-contain" style="border-radius: 50%;" alt="{{ $authorName }}" />
+    <img src="{{.}}" class="w-full p-2 h-full object-contain" style="border-radius: 50%;" alt="{{ $authorName }}" fetchpriority="high" loading="eager" />
   </div>
   {{ end }}
 

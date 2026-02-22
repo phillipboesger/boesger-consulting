@@ -49,7 +49,7 @@ type: about
 </style>
 
 <div class="about-flex">
-  <img src="/images/about-image.jpg" alt="Phillip Bösgers Portrait" class="about-image-round">
+  <img src="/images/about-image.webp" alt="Phillip Bösgers Portrait" class="about-image-round" loading="eager" fetchpriority="high" decoding="async">
   <div style="display: flex; align-items: center;">
     <span>
       Hi, I'm <strong>Phillip</strong>, a passionate Senior Software Developer specializing in <strong>Polarion consulting and plugin development</strong>. With extensive expertise in Java, HTML, JavaScript, and Velocity, I provide tailored solutions to streamline development processes and enhance team productivity. <br> Since 2024, I've also intensified my focus on GitHub automations, leveraging AI in daily workflows, and optimizing processes using AI Agents.

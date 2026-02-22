@@ -8,7 +8,7 @@ title = "Bösger Digital"
   description = "IT expert to take you further in the web and AI age"
   author = "Phillip Bösger"
   authorEmail = "consulting@boesger.com"
-  authorImage = "/images/photo.jpg"
+  authorImage = "/images/photo.webp"
   autoDarkMode = true
   favicon = "favicon.ico"
 
@@ -20,7 +20,7 @@ title = "Bösger Digital"
 
 [[params.homepage.resume.work]]
   name = "Bösger Digital"
-  logo = "/images/boesger-digital.png"
+  logo = "/images/boesger-digital.webp"
   role = "Self-employed / Freelancer"
   role2 = "Polarion, Full‑Stack & AI Consultant"
   details = "<section style=\"line-height:1.7;\"><div><h3 style=\"margin-bottom:0.2em;font-size:1.15em;font-weight:700;\">Self-employed / Freelancer <span style=\"color:#888;font-weight:400;font-size:0.95em;\">(Jan 2026 - Present)</span></h3><ul style=\"margin-left:1.2em;\"><li>🧭 Independent consulting with focus on <strong>Polarion ALM</strong> and <strong>full‑stack development</strong> (Java, HTML, JS)</li><li>🤖 Enablement for companies, developers and users: <strong>AI understanding, strategy and training</strong></li><li>⚙️ Building <strong>CI/CD pipelines</strong> (GitHub Actions, Maven, Jenkins) and <strong>n8n automations</strong></li><li>🧩 Design and implementation of AI agent workflows to modernize processes</li><li>🚀 End‑to‑end delivery, pragmatic solutions, knowledge transfer</li></ul></div></section>"
@@ -36,7 +36,7 @@ title = "Bösger Digital"
 
 [[params.homepage.resume.work]]
   name = "M.Sc. in Computer Science"
-  logo = "/images/education.png"
+  logo = "/images/education.webp"
   role = "M.Sc. in Computer Science"
   role2 = "part-time"
   details = "<strong>Master of Science in Computer Science</strong> at <strong>Technische Hochschule Nürnberg Georg Simon Ohm</strong><br><em>📍 Nuremberg, Germany &nbsp;|&nbsp; 2020 – 2022 &nbsp;|&nbsp; Grade: 1.6 &nbsp;|&nbsp; Part-time alongside professional work at avasis</em>"
@@ -51,7 +51,7 @@ title = "Bösger Digital"
 
 [[params.homepage.resume.work]]
   name = "B. Sc. in Computer Science"
-  logo = "/images/education.png"
+  logo = "/images/education.webp"
   role = "B. Sc. in Computer Science"
   role2 = "in cooperation with Atos"
   details = "<strong>Dual Student in Applied Computer Science</strong> at <strong>DHBW Mannheim</strong> (co-op with <strong>Atos</strong>)<br><em>&nbsp; Sep 2015 – Sep 2018 &nbsp;|&nbsp; Grade: 1.9</em><ul><li>📄 Created a proof-of-concept using Intelligent Capture OCR for automatic document recognition and integrated the extracted data into a database.</li><li>💻 Built an XML parser in C# to process large XML datasets and link them with Excel spreadsheets while ensuring high performance.</li><li>🧪 Oversaw test management in Polarion ALM, implemented UI-level test automation, and customized the system to meet customer requirements.</li><li>🎓 Completed a bachelor thesis on project organization in large Scrum projects using Polarion.</li></ul>"
@@ -61,7 +61,7 @@ title = "Bösger Digital"
   name = "GitHub"
   description = "Structur, Actions & CI/CD"
   details = "<ul><li>🔗 Built modular GitHub workflows for automated builds, snapshot releases, and test server integration.</li><li>🚀 Led migration from SVN to GitHub and eliminated manual processes via automation.</li><li>🛠️ Developed and maintained a lightweight, fully documented GitHub-based toolchain.</li><li>📈 Standardized workflows, approval processes, and delivered practical team trainings.</li><li>🤖 Leveraged GitHub Copilot daily, automating any repetitive work for maximum efficiency.</li></ul>"
-  image = "/images/githubActions.png"
+  image = "/images/githubActions.webp"
 
 [[params.homepage.resume.skills]]
   name = "Polarion"
@@ -85,7 +85,7 @@ title = "Bösger Digital"
   name = "Web Development"
   description = "from basics to frameworks"
   details = "<ul><li>🌐 10+ years of web development: HTML, CSS, JavaScript, strong Vanilla JS expertise.</li><li>⚡ Built flexible solutions in constrained environments and with modern frameworks (Angular, React, Flutter).</li><li>🎨 Creative mindset, always aiming for both functional and visually appealing results.</li><li>🛠️ Skilled in SCSS, Tailwind, Bootstrap—tool selection tailored to project needs.</li><li>🚀 Fast learner, able to quickly ramp up on new frameworks and technologies.</li></ul>"
-  image = "/images/web-developer.png"
+  image = "/images/web-developer.webp"
 
 [[params.homepage.resume.skills]]
   name = "DevOps"
