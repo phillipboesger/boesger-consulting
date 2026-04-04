@@ -23,7 +23,7 @@ title = "Bösger Digital"
   logo = "/images/boesger-digital.webp"
   role = "Self-employed / Freelancer"
   role2 = "Polarion, Full‑Stack & AI Consultant"
-  details = "<section style=\"line-height:1.7;\"><div><h3 style=\"margin-bottom:0.2em;font-size:1.15em;font-weight:700;\">Self-employed / Freelancer <span style=\"color:#888;font-weight:400;font-size:0.95em;\">(Jan 2026 - Present)</span></h3><ul style=\"margin-left:1.2em;\"><li>🧭 Independent consulting with focus on <strong>Polarion ALM</strong> and <strong>full‑stack development</strong> (Java, HTML, JS)</li><li>🤖 Enablement for companies, developers and users: <strong>AI understanding, strategy and training</strong></li><li>⚙️ Building <strong>CI/CD pipelines</strong> (GitHub Actions, Maven, Jenkins) and <strong>n8n automations</strong></li><li>🧩 Design and implementation of AI agent workflows to modernize processes</li><li>🚀 End‑to‑end delivery, pragmatic solutions, knowledge transfer</li></ul></div></section>"
+  details = "<section style=\"line-height:1.7;\"><div><h3 style=\"margin-bottom:0.2em;font-size:1.15em;font-weight:700;\">Self-employed / Freelancer <span style=\"color:#888;font-weight:400;font-size:0.95em;\">(Jan 2026 - Present)</span></h3><ul style=\"margin-left:1.2em;\"><li>🧭 Independent consulting with a focus on <strong>Polarion ALM</strong> and <strong>full‑stack development</strong> (Java, HTML, JS)</li><li>🤖 Enablement for companies, developers and users: <strong>AI understanding, strategy and training</strong></li><li>⚙️ Building <strong>CI/CD pipelines</strong> (GitHub Actions, Maven, Jenkins) and <strong>n8n automations</strong></li><li>🧩 Design and implementation of AI agent workflows to modernize processes</li><li>🚀 End‑to‑end delivery, pragmatic solutions, knowledge transfer</li></ul></div></section>"
   duration = "Jan 2026 - Present"
 
 [[params.homepage.resume.work]]
@@ -40,7 +40,7 @@ title = "Bösger Digital"
   role = "M.Sc. in Computer Science"
   role2 = "part-time"
   details = "<strong>Master of Science in Computer Science</strong> at <strong>Technische Hochschule Nürnberg Georg Simon Ohm</strong><br><em>📍 Nuremberg, Germany &nbsp;|&nbsp; 2020 – 2022 &nbsp;|&nbsp; Grade: 1.6 &nbsp;|&nbsp; Part-time alongside professional work at avasis</em>"
-  duration = "Sep 2020 - Mai 2022"
+  duration = "Sep 2020 - May 2022"
 
 [[params.homepage.resume.work]]
   name = "Atos"
@@ -59,7 +59,7 @@ title = "Bösger Digital"
 
 [[params.homepage.resume.skills]]
   name = "GitHub"
-  description = "Structur, Actions & CI/CD"
+  description = "Structure, Actions & CI/CD"
   details = "<ul><li>🔗 Built modular GitHub workflows for automated builds, snapshot releases, and test server integration.</li><li>🚀 Led migration from SVN to GitHub and eliminated manual processes via automation.</li><li>🛠️ Developed and maintained a lightweight, fully documented GitHub-based toolchain.</li><li>📈 Standardized workflows, approval processes, and delivered practical team trainings.</li><li>🤖 Leveraged GitHub Copilot daily, automating any repetitive work for maximum efficiency.</li></ul>"
   image = "/images/githubActions.webp"
 
@@ -77,8 +77,8 @@ title = "Bösger Digital"
 
 [[params.homepage.resume.skills]]
   name = "Java Development"
-  description = "Servlets, Backends and Services"
-  details = "<ul><li>☕ 10+ years Java experience, mainly backend for web tools like Polarion.</li><li>🔄 Expert in Streams, Lambdas, and modular code for scalable, maintainable systems.</li><li>🧩 Focused on reducing complexity and promoting clean architecture in every project.</li><li>🖥️ Built standalone applications as needed, always solution- and impact-driven.</li><li>🌍 Quick to adapt to new languages—C#, Python, Swift—thanks to strong cross-language skills.</li></ul>"
+  description = "Servlets, Backends, and Services"
+  details = "<ul><li>☕ 10+ years of Java experience, mainly backend for web tools like Polarion.</li><li>🔄 Expert in Streams, Lambdas, and modular code for scalable, maintainable systems.</li><li>🧩 Focused on reducing complexity and promoting clean architecture in every project.</li><li>🖥️ Built standalone applications as needed, always solution- and impact-driven.</li><li>🌍 Quick to adapt to new languages—C#, Python, Swift—thanks to strong cross-language skills.</li></ul>"
   image = "/images/java.png"
 
 [[params.homepage.resume.skills]]
@@ -90,7 +90,7 @@ title = "Bösger Digital"
 [[params.homepage.resume.skills]]
   name = "DevOps"
   description = "from problem analysis to solution & documentation"
-  details = "<ul><li>🔄 Managed the full DevOps lifecycle: requirements, CI/CD, automation, troubleshooting.</li><li>⚙️ Focused on in-house toolchains, with strong grasp of core DevOps processes.</li><li>🛠️ Automated builds, tests, and deployments for business-critical solutions.</li><li>🚀 Established team workflows and quality standards for stable, efficient delivery.</li><li>☁️ No deep experience with Azure or cloud DevOps, but strong process knowledge and adaptability.</li></ul>"
+  details = "<ul><li>🔄 Managed the full DevOps lifecycle: requirements, CI/CD, automation, troubleshooting.</li><li>⚙️ Focused on in-house toolchains, with a strong grasp of core DevOps processes.</li><li>🛠️ Automated builds, tests, and deployments for business-critical solutions.</li><li>🚀 Established team workflows and quality standards for stable, efficient delivery.</li><li>☁️ No deep experience with Azure or cloud DevOps, but strong process knowledge and adaptability.</li></ul>"
   image = "/images/CI_CD.png"
 
 [[params.homepage.resume.skills]]
