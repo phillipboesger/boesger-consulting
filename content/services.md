@@ -1,6 +1,6 @@
 ---
 title: "💼 My Services"
-description: "Overview of consulting, development, and training services."
+description: "Overview of consulting, development and training services."
 ---
 
 <style>
@@ -186,7 +186,7 @@ I offer a range of professional services to help your business succeed in the di
     </div>
     <ul>
       <li>Solution design & architecture for Polarion ALM</li>
-      <li>Project support, custom development, and integration</li>
+      <li>Project support, custom development and integration</li>
       <li>Delivery of complete solution packages and ready-to-use modules</li>
       <li>From initial concept to finished product, I support you at every step</li>
     </ul>
@@ -201,9 +201,9 @@ I offer a range of professional services to help your business succeed in the di
       <li>Building and establishing a GitHub-based workflow for your company</li>
       <li>Best practice implementation based on my experience and your environment</li>
       <li>Optimization and automation of existing GitHub setups using advanced workflows</li>
-      <li>Consulting, hands-on support, and training for your team</li>
+      <li>Consulting, hands-on support and training for your team</li>
     </ul>
-    <div style="font-size:0.98em;color:#2563eb;margin-top:0.5em;">Migration, automation, and team enablement for modern DevOps</div>
+    <div style="font-size:0.98em;color:#2563eb;margin-top:0.5em;">Migration, automation and team enablement for modern DevOps</div>
   </div>
   <div class="service-box">
     <div class="service-title-row">
@@ -223,7 +223,7 @@ I offer a range of professional services to help your business succeed in the di
 
 ## ⭐ Why work with me?
 
-- <strong>Proven expertise</strong> in Polarion, GitHub, CI/CD, and AI
+- <strong>Proven expertise</strong> in Polarion, GitHub, CI/CD and AI
 - <strong>Hands-on mentality</strong> and pragmatic, solution-oriented approach
 - <strong>Transparent communication</strong> and reliable delivery
 - <strong>Continuous improvement</strong> and knowledge transfer for your team
