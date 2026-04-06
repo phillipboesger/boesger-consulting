@@ -3,30 +3,20 @@ title: "Imprint / Legal Disclosure"
 description: "Legal information and contact details for this website."
 ---
 
-## Service Provider
+## Contact
 
 **Phillip Bösger**  
-Bösger Digital  
 Bachstraße 5 i  
 08412 Werdau  
 Germany
 
-**Contact:**  
 E-Mail: [consulting@boesger.com](mailto:consulting@boesger.com)
 
 ---
 
 ## Responsible for Content
 
-Responsible for the content of this website:
-
 **Phillip Bösger** (address as above)
-
----
-
-## VAT
-
-No VAT is charged (small business regulation – *Kleinunternehmerregelung*). No VAT identification number is therefore available.
 
 ---
 
@@ -44,7 +34,7 @@ This website contains links to external third-party websites over whose content 
 
 ## Copyright
 
-The content and works on this website created by the site operator are subject to German copyright law. Duplication, processing, distribution, or any form of commercialization of such material beyond the scope of copyright law shall require the prior written consent of the respective author or creator. Downloads and copies of this website are only permitted for private, non-commercial use.
+The content and works on this website are subject to copyright law. Duplication, processing, distribution, or any form of commercialization of such material beyond the scope of copyright law shall require the prior written consent of the respective author or creator. Downloads and copies of this website are only permitted for private, non-commercial use.
 
 ---
 
