@@ -1,14 +1,14 @@
 ---
 title: "Imprint / Legal Disclosure"
-description: "Legal information and contact details for this website – Impressum according to § 5 TMG."
+description: "Legal information and contact details for this website."
 ---
 
-## Information according to § 5 TMG (German Telemedia Act)
+## Service Provider
 
 **Phillip Bösger**  
 Bösger Digital  
-Musterstraße 1  
-12345 Musterstadt  
+Bachstraße 5 i  
+08412 Werdau  
 Germany
 
 **Contact:**  
@@ -18,7 +18,7 @@ E-Mail: [consulting@boesger.com](mailto:consulting@boesger.com)
 
 ## Responsible for Content
 
-Responsible for the content of this website according to § 55 para. 2 RStV (German Interstate Broadcasting Agreement):
+Responsible for the content of this website:
 
 **Phillip Bösger** (address as above)
 
@@ -26,7 +26,7 @@ Responsible for the content of this website according to § 55 para. 2 RStV (Ger
 
 ## VAT
 
-Pursuant to § 19 UStG (German Value Added Tax Act), no VAT is charged (small business regulation – *Kleinunternehmerregelung*). No VAT identification number is therefore available.
+No VAT is charged (small business regulation – *Kleinunternehmerregelung*). No VAT identification number is therefore available.
 
 ---
 
@@ -34,7 +34,7 @@ Pursuant to § 19 UStG (German Value Added Tax Act), no VAT is charged (small bu
 
 ### Liability for Content
 
-The contents of this website have been created with the utmost care. However, I cannot guarantee the accuracy, completeness, or timeliness of the content. As a service provider, I am responsible for my own content on these pages in accordance with § 7 para. 1 TMG and general laws. However, pursuant to §§ 8–10 TMG, I am not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information in accordance with general law remain unaffected. Any liability in this respect is, however, only possible from the point in time at which a concrete infringement of the law becomes known.
+The contents of this website have been created with the utmost care. However, I cannot guarantee the accuracy, completeness, or timeliness of the content. As a service provider, I am responsible for my own content on these pages in accordance with general laws. However, I am not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information in accordance with general law remain unaffected.
 
 ### Liability for Links
 
