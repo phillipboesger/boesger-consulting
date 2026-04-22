@@ -1,5 +1,5 @@
 {{ with .Site.Params.homepage.projects }}
-<section class="my-16 mx-auto max-w-5xl px-4">
+<section class="my-8 mx-auto max-w-5xl px-4">
   <div class="section-header">Projects & Portfolio</div>
   <p class="projects-intro">
     A growing collection of things I build – from AI agents and automations to Polarion extensions.
@@ -24,9 +24,10 @@
           {{ range . }}<li class="project-tag">{{ . }}</li>{{ end }}
         </ul>
         {{ end }}
-        {{ with .link }}
-        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link">
-          {{ with .linkLabel }}{{ . }}{{ else }}Learn more{{ end }} →
+        {{ if .link }}
+        {{ $label := .linkLabel | default "Learn more" }}
+        <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="project-link">
+          {{ $label }} →
         </a>
         {{ end }}
       </div>
