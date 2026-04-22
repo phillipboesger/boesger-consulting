@@ -20,7 +20,6 @@ title = "Bösger Digital"
   description = "This is my digital CV and portfolio – a look at who I am, what I build and where I'm taking Polarion next."
   # Vision / LinkedIn-style headline – appears prominently in the hero
   vision = "Less manual work, more AI in Polarion."
-  contact = "https://www.linkedin.com/in/phillip-boesger-90691215a/"
   linkedin = "https://www.linkedin.com/in/phillip-boesger-90691215a/"
 
 [[params.homepage.resume.work]]

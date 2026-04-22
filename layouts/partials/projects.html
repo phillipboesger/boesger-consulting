@@ -26,7 +26,7 @@
         {{ end }}
         {{ with .link }}
         <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link">
-          {{ with $.linkLabel }}{{ . }}{{ else }}Learn more{{ end }} →
+          {{ with .linkLabel }}{{ . }}{{ else }}Learn more{{ end }} →
         </a>
         {{ end }}
       </div>
