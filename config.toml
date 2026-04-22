@@ -5,25 +5,27 @@ title = "Bösger Digital"
 
 [params]
   name = "Bösger Digital"
-  description = "IT expert to take you further in the web and AI age"
+  description = "Phillip Bösger – Polarion expert helping teams replace manual ALM work with AI orchestration, automation and pragmatic full-stack delivery."
   author = "Phillip Bösger"
   authorEmail = "consulting@boesger.com"
   authorImage = "/images/photo.webp"
   autoDarkMode = true
   favicon = "favicon.ico"
+  backgroundImage = "/images/background.png"
 
 [params.homepage]
-  title = "Hey 👋 I'm Phillip"
-  tagline = "Software Developer, Polarion Expert & AI Enthusiast"
-  description = "Bringing innovative solutions & processes into your business"
-  contact = "https://www.linkedin.com/in/phillip-boesger-90691215a/"
+  title = "Hey, I'm Phillip"
+  tagline = "Polarion Expert, AI & Full-Stack Developer"
+  description = "I help teams cut manual work in Polarion through smarter engineering workflows, practical AI orchestration and hands-on implementation from idea to delivery."
+  vision = "More AI, less manual work."
+  linkedin = "https://www.linkedin.com/in/phillip-boesger-90691215a/"
 
 [[params.homepage.resume.work]]
   name = "Bösger Digital"
   logo = "/images/boesger-digital.webp"
-  role = "Self-employed / Freelancer"
-  role2 = "Polarion, Full‑Stack & AI Consultant"
-  details = "<section style=\"line-height:1.7;\"><div><h3 style=\"margin-bottom:0.2em;font-size:1.15em;font-weight:700;\">Self-employed / Freelancer <span style=\"color:#888;font-weight:400;font-size:0.95em;\">(Jan 2026 - Present)</span></h3><ul style=\"margin-left:1.2em;\"><li>🧭 Independent consulting with a focus on <strong>Polarion ALM</strong> and <strong>full‑stack development</strong> (Java, HTML, JS)</li><li>🤖 Enablement for companies, developers and users: <strong>AI understanding, strategy and training</strong></li><li>⚙️ Building <strong>CI/CD pipelines</strong> (GitHub Actions, Maven, Jenkins) and <strong>n8n automations</strong></li><li>🧩 Design and implementation of AI agent workflows to modernize processes</li><li>🚀 End‑to‑end delivery, pragmatic solutions, knowledge transfer</li></ul></div></section>"
+  role = "Polarion Expert & AI Developer"
+  role2 = "Bridging the gap between Requirements Management and High-Speed Development"
+  details = "<section style=\"line-height:1.7;\"><div><h3 style=\"margin-bottom:0.2em;font-size:1.15em;font-weight:700;\">Polarion Expert &amp; AI Developer <span style=\"color:#888;font-weight:400;font-size:0.95em;\">(Jan 2026 - Present)</span></h3><p>I eliminate manual busywork in Polarion and accelerate your development cycles. Instead of just consulting, I build. Operating as a fully autonomous developer, I leverage custom AI workflows to deliver features faster—without compromising on code quality, testing, or documentation.</p><ul style=\"margin-left:1.2em;\"><li><strong>Autonomous Feature Development:</strong> Building custom Polarion extensions (Java, HTML, JS) at record speed. My AI-first approach guarantees high-velocity delivery with comprehensive documentation.</li><li><strong>End-to-End Automation:</strong> Replacing manual clicks with smart AI agents and fully automated CI/CD pipelines.</li><li><strong>Strategic Enablement:</strong> I don't just deliver code. I upskill your team. Practical AI training, strategy, and knowledge transfer to modernize your internal processes.</li><li><strong>The Result:</strong> Faster time-to-market, pragmatic solutions, and a radical reduction in repetitive tasks.</li></ul></div></section>"
   duration = "Jan 2026 - Present"
 
 [[params.homepage.resume.work]]
@@ -31,8 +33,8 @@ title = "Bösger Digital"
   logo = "/images/avasis-logo.svg"
   role = "Senior Software Developer"
   role2 = "Technical Development Lead Polarion & ALM Consultant"
-  details = "<section style=\"line-height:1.7;\"><div style=\"margin-bottom:1.5em;\"><h3 style=\"margin-bottom:0.2em;font-size:1.15em;font-weight:700;\">Senior Software Developer <span style=\"color:#888;font-weight:400;font-size:0.95em;\">(Mar 2024 - Dec 2025)</span></h3><ul style=\"margin-left:1.2em;\"><li>✨ Development of intuitive Polarion extensions <span style=\"color:#888;\">(Fullstack: Java & Web UI)</span></li><li>⚙️ Process automation via CI/CD <span style=\"color:#888;\">(GitHub, Maven, Jenkins)</span></li><li>🤝 Independent customer support & continuous improvement</li></ul></div><div style=\"margin-bottom:1.5em;\"><h3 style=\"margin-bottom:0.2em;font-size:1.08em;font-weight:600;\">Technical Development Lead Polarion & ALM Consultant <span style=\"color:#888;font-weight:400;font-size:0.93em;\">(May 2022 - Mar 2024)</span></h3><ul style=\"margin-left:1.2em;\"><li>🚀 Development & enhancement of Siemens Polarion extensions</li><li>📝 Feature design, implementation & release planning</li><li>🧩 Development of templates, widgets & plugins for complex use cases</li></ul></div><div><h3 style=\"margin-bottom:0.2em;font-size:1.05em;font-weight:600;\">ALM Consultant <span style=\"color:#888;font-weight:400;font-size:0.92em;\">(Nov 2020 - May 2022)</span></h3><ul style=\"margin-left:1.2em;\"><li>🔧 Customer-specific Polarion customizations <span style=\"color:#888;\">(Java, HTML, JS)</span></li><li>🏥 Digitalization of processes in the medical sector <span style=\"color:#888;\">(Requirements, risk management)</span></li><li>📈 Improvement of internal development structures (CI/CD)</li></ul></div></section>"
-  duration = "Nov 2020 - Dec 2025"
+  details = "<section style=\"line-height:1.7;\"><div style=\"margin-bottom:1.5em;\"><h3 style=\"margin-bottom:0.2em;font-size:1.15em;font-weight:700;\">Senior Software Developer <span style=\"color:#888;font-weight:400;font-size:0.95em;\">(Mar 2024 - Jan 2026)</span></h3><p>Driven by the goal of faster feedback and fewer manual loops, I optimized our development processes by shifting toward an AI-assisted workflow.</p><ul style=\"margin-left:1.2em;\"><li><strong>AI-Powered Development:</strong> Integrated LLMs and agents into daily operations (code generation, automated reviews, test scaffolding, and documentation), drastically reducing manual effort.</li><li><strong>End-to-End Delivery:</strong> Built intuitive Polarion extensions (Java, Web UI) from initial customer consultation to final automated deployment.</li><li><strong>Pipeline Automation:</strong> Strengthened CI/CD pipelines (GitHub, Maven, Jenkins) with automated quality gates and automatic generated release notes.</li></ul></div><div style=\"margin-bottom:1.5em;\"><h3 style=\"margin-bottom:0.2em;font-size:1.08em;font-weight:600;\">Technical Development Lead Polarion <span style=\"color:#888;font-weight:400;font-size:0.93em;\">(May 2022 - Mar 2024)</span></h3><p>Bridged the gap between customer requirements and technical execution, leading the development of custom Polarion extensions.</p><ul style=\"margin-left:1.2em;\"><li><strong>Technical Leadership:</strong> Managed the complete lifecycle, development, and release planning for new Polarion features, templates, and plugins.</li><li><strong>Customer-Centric Solutions:</strong> Consulted clients to translate their specific needs into tailored Polarion architectures and logic elements.</li><li><strong>Quality &amp; Maintenance:</strong> Ensured the stability, performance, and continuous enhancement of our core extension portfolio.</li></ul></div><div><h3 style=\"margin-bottom:0.2em;font-size:1.05em;font-weight:600;\">ALM Consultant <span style=\"color:#888;font-weight:400;font-size:0.92em;\">(Nov 2020 - May 2022)</span></h3><p>Helped organizations digitize complex processes, with a strong focus on the highly regulated medical sector (Risk Management &amp; Requirements Engineering).</p><ul style=\"margin-left:1.2em;\"><li><strong>Custom Implementations:</strong> Advised clients on optimal Polarion setups and developed individual extensions (Java, HTML, JS) to match their specific workflows.</li><li><strong>Internal Optimization:</strong> Initiated the continuous improvement of internal development structures, introducing better build management and CI/CD practices from day one.</li></ul></div></section>"
+  duration = "Nov 2020 - Jan 2026"
 
 [[params.homepage.resume.work]]
   name = "M.Sc. in Computer Science"
@@ -46,7 +48,7 @@ title = "Bösger Digital"
   name = "Atos"
   logo = "/images/atos-logo.png"
   role = "PLM Consultant"
-  details = "<section style=\"line-height:1.7;\"><div><h3 style=\"margin-bottom:0.2em;font-size:1.15em;font-weight:700;\">PLM Consultant <span style=\"color:#888;font-weight:400;font-size:0.95em;\">(Sep 2018 - Oct 2020)</span></h3><ul style=\"margin-left:1.2em;\"><li>🔍 Consulting and customizing PLM systems for industrial customers</li><li>🛠️ Implementation of customer-specific software solutions <span style=\"color:#888;\">(Java, HTML, JavaScript)</span></li><li>📊 Supporting process optimization and digitalization initiatives</li><li>🤝 Close collaboration with clients to identify needs and define requirements</li></ul></div></section>"
+  details = "<section style=\"line-height:1.7;\"><div><h3 style=\"margin-bottom:0.2em;font-size:1.15em;font-weight:700;\">PLM Consultant <span style=\"color:#888;font-weight:400;font-size:0.95em;\">(Sep 2018 - Oct 2020)</span></h3><p>Drove the adaptation and expansion of Polarion ALM for major enterprise clients, including Siemens.</p><ul style=\"margin-left:1.2em;\"><li><strong>End-to-End Execution:</strong> Handled the complete lifecycle including requirements engineering, system architecture, development, and test support.</li><li><strong>Agile Leadership:</strong> Acted as Scrum Master to optimize agile workflows, elevate team quality, and streamline communication.</li><li><strong>Process Optimization:</strong> Bridged the gap between technical execution and project management to ensure smooth and fast delivery cycles.</li></ul></div></section>"
   duration = "Sep 2018 - Oct 2020"
 
 [[params.homepage.resume.work]]
@@ -54,50 +56,44 @@ title = "Bösger Digital"
   logo = "/images/education.webp"
   role = "B. Sc. in Computer Science"
   role2 = "in cooperation with Atos"
-  details = "<strong>Dual Student in Applied Computer Science</strong> at <strong>DHBW Mannheim</strong> (co-op with <strong>Atos</strong>)<br><em>&nbsp; Sep 2015 – Sep 2018 &nbsp;|&nbsp; Grade: 1.9</em><ul><li>📄 Created a proof-of-concept using Intelligent Capture OCR for automatic document recognition and integrated the extracted data into a database.</li><li>💻 Built an XML parser in C# to process large XML datasets and link them with Excel spreadsheets while ensuring high performance.</li><li>🧪 Oversaw test management in Polarion ALM, implemented UI-level test automation and customized the system to meet customer requirements.</li><li>🎓 Completed a bachelor thesis on project organization in large Scrum projects using Polarion.</li></ul>"
+  details = "<strong>Dual Student in Applied Computer Science</strong> at <strong>DHBW Mannheim</strong> (co-op with <strong>Atos</strong>)<br><em>Sep 2015 – Sep 2018 | Grade: 1.9</em><p>Built a strong technical foundation with an early focus on process automation, data extraction, and test automation within Polarion environments.</p><ul><li><strong>Test Automation &amp; Management:</strong> Set up complete UI-level test automation for Polarion and stepped up to manage test operations, ensuring full coverage and continuous process improvement.</li><li><strong>Data Automation &amp; Prototyping:</strong> Developed a high-performance C# XML parser for large datasets and built an OCR-based proof-of-concept to automate document recognition and data extraction.</li><li><strong>Academic Milestone:</strong> Wrote my bachelor thesis on &quot;Reference modeling and prototyping of the project organization of large Scrum projects using Polarion,&quot; proving deep architectural expertise from the very beginning.</li></ul>"
   duration = "Sep 2015 - Sep 2018"
-
-[[params.homepage.resume.skills]]
-  name = "GitHub"
-  description = "Structure, Actions & CI/CD"
-  details = "<ul><li>🔗 Built modular GitHub workflows for automated builds, snapshot releases and test server integration.</li><li>🚀 Led migration from SVN to GitHub and eliminated manual processes via automation.</li><li>🛠️ Developed and maintained a lightweight, fully documented GitHub-based toolchain.</li><li>📈 Standardized workflows, approval processes and delivered practical team trainings.</li><li>🤖 Leveraged GitHub Copilot daily, automating any repetitive work for maximum efficiency.</li></ul>"
-  image = "/images/githubActions.webp"
 
 [[params.homepage.resume.skills]]
   name = "Polarion"
   description = "Tool and Process Expert"
-  details = "<ul><li>💡 7+ years as Polarion developer, architect and consultant—end-to-end from requirements to support.</li><li>🧩 Built all extension types: macros, widgets, connectors, data importers, logic layers, templates.</li><li>🛠️ Deep expertise in Polarion OOTB, configuration and complex integrations.</li><li>📚 Delivered focused trainings on OOTB, APIs and development best practices.</li><li>🚀 Always striving to improve solutions, quality and maintainability in every project.</li></ul>"
+  details = "<ul><li>10 years of Polarion experience across consulting, development, architecture and enablement.</li><li>Built the full extension spectrum: macros, widgets, connectors, templates, importers and custom logic layers.</li><li>Deep expertise in Polarion OOTB, configuration, integration patterns and developer workflows.</li><li>Strong focus on helping teams build faster and better Polarion extensions through pragmatic coaching and better tooling.</li><li>Current direction: bringing AI orchestration into Polarion to replace repetitive manual work with smarter workflows.</li></ul>"
   image = "/images/polarion.png"
+
+[[params.homepage.resume.skills]]
+  name = "GitHub"
+  description = "Structure, Actions & CI/CD"
+  details = "<ul><li>Built modular GitHub workflows for automated builds, snapshot releases and test server integration.</li><li>Led migration from SVN to GitHub and eliminated manual processes via automation.</li><li>Developed and maintained a lightweight, fully documented GitHub-based toolchain.</li><li>Standardized workflows, approval processes and delivered practical team trainings.</li><li>Using GitHub Copilot daily to automate repetitive work and keep things efficient.</li></ul>"
+  image = "/images/githubActions.webp"
 
 [[params.homepage.resume.skills]]
   name = "GenAI"
   description = "ChatGPT, automation & AI agents"
-  details = "<ul><li>🌍 Comprehensive knowledge of AI models, vendors and best-use scenarios.</li><li>🧠 Advanced prompt engineering and process optimization through AI tools.</li><li>🤖 Automated workflows using custom GPTs and OpenAI API integration.</li><li>🔗 Built end-to-end automation pipelines and AI agent networks for complex tasks.</li><li>🚀 Constantly exploring new AI tools and integrating them into daily routines.</li></ul>"
+  details = "<ul><li>Practical understanding of AI models, vendors and where each actually creates value in engineering workflows.</li><li>Strong focus on prompt design, AI enablement and turning AI ideas into repeatable team workflows.</li><li>Building AI automations and agent flows with a clear product mindset instead of isolated demos.</li><li>Exploring how <strong>AI orchestration</strong> can enhance Polarion and related engineering processes.</li><li>Constantly testing new tools and integrating the useful ones into real delivery work.</li></ul>"
   image = "/images/chatGPT.png"
 
 [[params.homepage.resume.skills]]
   name = "Java Development"
   description = "Servlets, Backends and Services"
-  details = "<ul><li>☕ 10+ years of Java experience, mainly backend for web tools like Polarion.</li><li>🔄 Expert in Streams, Lambdas and modular code for scalable, maintainable systems.</li><li>🧩 Focused on reducing complexity and promoting clean architecture in every project.</li><li>🖥️ Built standalone applications as needed, always solution- and impact-driven.</li><li>🌍 Quick to adapt to new languages—C#, Python, Swift—thanks to strong cross-language skills.</li></ul>"
+  details = "<ul><li>10+ years of Java experience, mainly backend for web tools like Polarion.</li><li>Expert in Streams, Lambdas and modular code for scalable, maintainable systems.</li><li>Focused on reducing complexity and promoting clean architecture in every project.</li><li>Built standalone applications as needed, always pragmatic and focused on real outcomes.</li><li>Quick to adapt to new languages like C#, Python or Swift, backed by strong cross-language foundations.</li></ul>"
   image = "/images/java.png"
 
 [[params.homepage.resume.skills]]
   name = "Web Development"
   description = "from basics to frameworks"
-  details = "<ul><li>🌐 10+ years of web development: HTML, CSS, JavaScript, strong Vanilla JS expertise.</li><li>⚡ Built flexible solutions in constrained environments and with modern frameworks (Angular, React, Flutter).</li><li>🎨 Creative mindset, always aiming for both functional and visually appealing results.</li><li>🛠️ Skilled in SCSS, Tailwind, Bootstrap—tool selection tailored to project needs.</li><li>🚀 Fast learner, able to quickly ramp up on new frameworks and technologies.</li></ul>"
+  details = "<ul><li>10+ years of web development: HTML, CSS, JavaScript, strong Vanilla JS expertise.</li><li>Built flexible solutions in constrained environments and with modern frameworks (Angular, React, Flutter).</li><li>Creative mindset, always aiming for both functional and visually appealing results.</li><li>Skilled in SCSS, Tailwind, Bootstrap—tool selection tailored to project needs.</li><li>Fast learner, able to quickly ramp up on new frameworks and technologies.</li></ul>"
   image = "/images/web-developer.webp"
 
 [[params.homepage.resume.skills]]
   name = "DevOps"
   description = "from problem analysis to solution & documentation"
-  details = "<ul><li>🔄 Managed the full DevOps lifecycle: requirements, CI/CD, automation, troubleshooting.</li><li>⚙️ Focused on in-house toolchains, with a strong grasp of core DevOps processes.</li><li>🛠️ Automated builds, tests and deployments for business-critical solutions.</li><li>🚀 Established team workflows and quality standards for stable, efficient delivery.</li><li>☁️ No deep experience with Azure or cloud DevOps, but strong process knowledge and adaptability.</li></ul>"
+  details = "<ul><li>Managed the full DevOps lifecycle: requirements, CI/CD, automation, troubleshooting.</li><li>Focused on in-house toolchains, with a strong grasp of core DevOps processes.</li><li>Automated builds, tests and deployments for business-critical solutions.</li><li>Established team workflows and quality standards for stable, efficient delivery.</li><li>No deep experience with Azure or cloud DevOps, but strong process knowledge and adaptability.</li></ul>"
   image = "/images/CI_CD.png"
-
-[[params.homepage.resume.skills]]
-  name = "n8n"
-  description = "Building powerful AI agents"
-  details = "<ul><li>🤖 Building n8n expertise since 2025, focusing on AI API integration and workflow automation.</li><li>📚 Completed courses on n8n, from basic chains to advanced AI agent networks.</li><li>🧠 Defined and optimized AI agents for robust, reliable outputs.</li><li>🔗 Strong understanding of AI agent collaboration and automation design.</li><li>🌐 Familiar with Make.com, Zapier and ready to transfer best practices across platforms.</li></ul>"
-  image = "/images/n8n.png"
 
 [[params.homepage.resume.courses]]
   name = "Professional Scrum Master I"
@@ -118,6 +114,58 @@ title = "Bösger Digital"
   name = "AI Automation: Build LLM Apps & AI Agents with n8n & APIs"
   provider = "Udemy"
   image = "/images/n8n.png"
+
+# ---------------------------------------------------------------------------
+# Projects & Portfolio
+# ---------------------------------------------------------------------------
+# Add new projects by appending another [[params.homepage.projects]] block.
+# Each entry supports:
+#   name        – project title
+#   tagline     – short pitch (1 line)
+#   description – longer description (HTML allowed)
+#   image       – preview image (path under /static)
+#   link        – optional external link (project page, repo, demo, …)
+#   linkLabel   – optional label for the link button (defaults to "Learn more")
+#   tags        – list of short keyword tags rendered as chips
+#   status      – optional badge text, e.g. "Coming soon", "In development"
+
+[[params.homepage.projects]]
+  name = "avaCopilot"
+  tagline = "AI Copilot bringing GenAI capabilities into Polarion ALM"
+  description = "An AI assistant for Polarion that turns repetitive ALM work into conversational, automated workflows – aligned with my mission to bring less manual work and more AI into Polarion."
+  image = "/images/chatGPT.png"
+  tags = ["Polarion", "GenAI", "Automation"]
+  status = "In development"
+
+[[params.homepage.projects]]
+  name = "Sharing Knowledge with the Community"
+  tagline = "The go-to blog for Polarion ALM & AI-driven development"
+  description = "My personal knowledge hub – I write about everything I discover in the world of Polarion ALM and AI-driven development. Practical tips, real-world customizations, CI/CD automation, and hands-on AI agent experiments. Shared freely so you don't have to figure it out the hard way."
+  image = "/images/icon.png"
+  link = "https://polarion.boesger.com"
+  linkLabel = "Visit the Blog"
+  tags = ["Polarion", "AI Agents", "Knowledge Sharing"]
+  status = "Active"
+
+[[params.homepage.projects]]
+  name = "Polarion Code Editor"
+  tagline = "VS Code-style file editor built directly into the Polarion Admin panel"
+  description = "Stop checking out. Edit Velocity macros, JSON configs, and XML files directly inside Polarion – no SVN client needed. Powered by the Monaco Engine (the same engine behind VS Code) with syntax highlighting, auto-formatting, and persistent sessions."
+  image = "/images/polarion.png"
+  link = "https://github.com/phillipboesger/polarion.code.editor-download/releases"
+  linkLabel = "Download on GitHub"
+  tags = ["Polarion", "Monaco Editor", "Open Source"]
+  status = "Free Download"
+
+[[params.homepage.projects]]
+  name = "Polarion Docker"
+  tagline = "Run Polarion ALM in containers – on macOS, Windows & Linux"
+  description = "A fully automated Dockerfile &amp; setup scripts that containerize a fresh Polarion ALM installation with zero manual effort – including WebSocket, SVN, PostgreSQL auto-config, and one-click remote debugging. Supports Docker, Podman, and Apple <code>container</code> on Apple Silicon."
+  image = "/images/CI_CD.png"
+  link = "https://github.com/phillipboesger/polarion-docker"
+  linkLabel = "View on GitHub"
+  tags = ["Docker", "Polarion", "Open Source"]
+  status = "Open Source"
 
 [params.homepage.social]
   linkedin = "https://www.linkedin.com/in/phillip-boesger-90691215a/"

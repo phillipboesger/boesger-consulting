@@ -1,8 +1,8 @@
-<section class="my-16 mx-auto max-w-3xl px-4">
-  <div class="section-header">Polarion Blog</div>
+<section class="my-16 mx-auto max-w-5xl px-4">
+  <div class="section-header">From the Polarion Blog</div>
   <div class="polarion-blog-card">
     <div class="polarion-blog-icon">
-      <img src="/images/polarion.png" alt="Polarion Blog" loading="lazy" decoding="async">
+      <img src="/images/icon.png" alt="Polarion Blog" loading="lazy" decoding="async">
     </div>
     <div class="polarion-blog-content">
       <h2 class="polarion-blog-title">Sharing Knowledge with the Community</h2>
@@ -12,6 +12,14 @@
       <p class="polarion-blog-text">
         Whether it's a tricky customization, a new workflow idea, or an insight on combining Polarion with modern AI tools — I write it down so others don't have to figure it out the hard way. And I genuinely enjoy the feedback and conversations that come out of it.
       </p>
+
+      <ul class="polarion-blog-samples" aria-label="Sample topics">
+        <li>AI &amp; Polarion</li>
+        <li>Customizations &amp; Extensions</li>
+        <li>CI/CD &amp; Automation</li>
+        <li>Tips &amp; Tricks</li>
+      </ul>
+
       <a href="https://polarion.boesger.com" target="_blank" rel="noopener noreferrer" class="polarion-blog-btn">
         Visit the Blog →
       </a>
@@ -61,6 +69,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    min-width: 0;
   }
 
   .polarion-blog-title {
@@ -89,6 +98,28 @@
     text-decoration: underline;
   }
 
+  .polarion-blog-samples {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .polarion-blog-samples li {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(37, 99, 235, 0.1);
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    color: #2563eb;
+  }
+
   @media (prefers-color-scheme: dark) {
     .polarion-blog-card {
       background: rgba(17, 24, 39, 0.6);
@@ -100,6 +131,12 @@
     }
 
     .polarion-blog-link:hover {
+      color: #93c5fd;
+    }
+
+    .polarion-blog-samples li {
+      background: rgba(96, 165, 250, 0.12);
+      border-color: rgba(96, 165, 250, 0.3);
       color: #93c5fd;
     }
   }
@@ -140,6 +177,10 @@
     .polarion-blog-icon {
       width: 80px;
       height: 80px;
+    }
+
+    .polarion-blog-samples {
+      justify-content: center;
     }
 
     .polarion-blog-btn {

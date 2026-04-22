@@ -1,17 +1,16 @@
-<section class="my-16 max-w-2xl mx-auto">
-  <div class="text-4xl font-bold text-center">
-    Ready for the next step?
-    <br />
-    <br />
-    <a class="contact-cta-link" href="mailto:{{.Site.Params.authorEmail}}">Let's chat 📨</a>
+<section class="cta-section">
+  <div class="cta-inner">
+    <span class="cta-label">Get in touch</span>
+    <h2 class="cta-heading">Ready for the next step?</h2>
+    <div class="cta-btn-row">
+      <a class="cta-btn-primary" href="https://www.linkedin.com/messaging/compose/?recipient=phillip-boesger-90691215a" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8.01"/><line x1="12" y1="16" x2="12" y2="11"/><path d="M16 16v-3a2 2 0 0 0 -4 0"/></svg>
+        Message on LinkedIn
+      </a>
+      <a class="cta-btn-secondary" href="mailto:{{.Site.Params.authorEmail}}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg>
+        Send an Email
+      </a>
+    </div>
   </div>
 </section>
-
-<style>
-  @media (max-width: 700px) {
-    .cta-white,
-    .text-4xl.text-center {
-      font-size: 1.75rem !important;
-    }
-  }
-</style>

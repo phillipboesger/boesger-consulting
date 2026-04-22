@@ -1,94 +1,490 @@
-<section class="p-4 flex flex-col items-center">
+<section class="hero-section">
   {{ $authorName := .Site.Params.author }}
-  {{ with .Site.Params.authorImage }}
-  <div class="w-48 h-48 rounded-full mb-6">
-    <img src="{{.}}" class="w-full p-2 h-full object-contain" style="border-radius: 50%;" alt="{{ $authorName }}" fetchpriority="high" loading="eager" />
-  </div>
-  {{ end }}
+  <div class="hero-grid">
 
-  <h1 class="text-2xl font-bold text-center mb-4">
-    {{ .Site.Params.homepage.title }}
-  </h1>
-  <div class="text-5xl md:text-6xl font-bold text-center mb-4 relative">
-    <div class="absolute top-10 opacity-20 transform left-1/2 -translate-x-1/2 text-red-300 z-0 w-full">
-      <svg class="max-w-xs md:max-w-lg mx-auto w-full" viewbox="0 0 625 56" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M2 46c1.035 2.276 1.035 2.276 1.036 2.275h.002l.011-.006.048-.021.198-.089c.176-.08.443-.197.796-.353.707-.31 1.763-.767 3.145-1.35a406.34 406.34 0 0112.06-4.841c10.438-4.011 25.451-9.363 43.72-14.716C99.57 16.19 149.07 5.5 201 5.5v-5C148.43.5 98.43 11.312 61.61 22.1c-18.42 5.398-33.563 10.796-44.108 14.848a411.168 411.168 0 00-12.209 4.9 243.513 243.513 0 00-4.039 1.746 96.86 96.86 0 00-.268.121l-.015.007-.004.002c-.002 0-.002 0 1.033 2.276zM201 5.5c51.827 0 96.622 13.509 138.315 26.573 41.555 13.021 80.28 25.705 119.331 23.423l-.292-4.992c-37.949 2.218-75.724-10.098-117.544-23.202C299.128 14.24 253.673.5 201 .5v5zm257.646 49.996c38.873-2.272 80.4-14.874 112.112-26.845a615.88 615.88 0 0038.831-16.199 484.157 484.157 0 0011.08-5.243 292.1 292.1 0 003.713-1.852l.197-.1.05-.027.014-.006.004-.002c.001 0 .001-.001-1.147-2.222L622.351.78h-.002l-.011.006a611.127 611.127 0 01-53.346 23.187c-31.538 11.905-72.511 24.303-110.638 26.531l.292 4.992z"
-          fill="currentColor" />
-      </svg>
+    <!-- ── LEFT: Introduction & CTAs ── -->
+    <div class="hero-copy">
+      <p class="hero-kicker">AI-driven Polarion consulting</p>
+      <h1 class="hero-title">{{ .Site.Params.homepage.title }}</h1>
+      <div class="hero-role-block">
+        <p class="hero-role">{{ .Site.Params.homepage.tagline }}</p>
+      </div>
+
+      <!-- Vision block -->
+      <div class="hero-vision-block">
+        <div>
+          <p class="hero-vision-label">My Vision</p>
+          <p class="hero-vision-text">AI that replaces manual work in Polarion — smarter workflows, less overhead, faster delivery. No hype, just working automation.</p>
+        </div>
+      </div>
+
+      <!-- LinkedIn pitch block -->
+      <div class="hero-pitch-block">
+        <p class="hero-pitch-title">How I accelerate your development cycles</p>
+        <p class="hero-pitch-intro">Ten years of working with Polarion taught me exactly where teams lose time. I bridge the gap between requirements management and technical execution. <strong>I do not just consult. I build. And I build fast.</strong></p>
+        <ul class="hero-pitch-list">
+          <li><strong>Full Lifecycle Expertise:</strong> From strategic consulting and requirements to final rollout.</li>
+          <li><strong>AI-Driven Development:</strong> Fast, adaptable and fully documented AI features for Polarion.</li>
+          <li><strong>Pipeline Automation:</strong> Replacing manual clicks with smart and automated workflows.</li>
+        </ul>
+        <p class="hero-pitch-description">{{ .Site.Params.homepage.description }}</p>
+      </div>
+
+      <!-- Primary CTAs -->
+      <div class="hero-cta-group">
+        {{ with .Site.Params.homepage.linkedin }}
+        <a href="{{ . }}" rel="noopener noreferrer" target="_blank" class="cta-button cta-button-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="margin-right:0.45rem;flex-shrink:0;">
+            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 11.001-4.121A2.06 2.06 0 015.34 7.43zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/>
+          </svg>
+          LinkedIn
+        </a>
+        {{ end }}
+        <a href="mailto:{{ .Site.Params.authorEmail }}" class="cta-button cta-button-secondary">Get in touch</a>
+      </div>
+
+      <!-- Navigation links -->
+      <div class="hero-nav-links">
+        <a href="/cv" class="hero-nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          View CV
+        </a>
+        <a href="/skills" class="hero-nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+          My Skills
+        </a>
+        <a href="https://polarion.boesger.com" target="_blank" rel="noopener noreferrer" class="hero-nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          Blog
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="margin-left:0.15rem;opacity:0.6;"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7,7 17,7 17,17"/></svg>
+        </a>
+      </div>
     </div>
-    <div class="relative">{{ .Site.Params.homepage.tagline }}</div>
-  </div>
-  <p class="font-light text-center max-w-sm mb-8">
-    {{ .Site.Params.homepage.description }}
-  </p>
 
-  {{ with .Site.Params.homepage.contact }}
-  <a href="{{ . }}" rel="noopener noreferrer" target="_blank"
-    class="cta-button">Talk to me</a>
-  {{ end }}
+    <!-- ── RIGHT: Two photos ── -->
+    <div class="hero-visual">
+      <!-- In focus (back layer, left) -->
+      <div class="hero-photo-frame hero-photo-professional">
+        <img src="/images/photo.webp" alt="{{ $authorName }} – In focus" class="hero-photo-img" fetchpriority="high" loading="eager" />
+        <div class="hero-photo-label">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/></svg>
+          In focus
+        </div>
+      </div>
+      <!-- Off duty (front layer, right) -->
+      <div class="hero-photo-frame hero-photo-leisure">
+        <img src="/images/about-image.webp" alt="{{ $authorName }} – Off duty" class="hero-photo-img" loading="lazy" />
+        <div class="hero-photo-label hero-photo-label-leisure">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          Off duty
+        </div>
+      </div>
+      <!-- Available badge -->
+      <div class="hero-photo-badge">
+        <span class="hero-photo-badge-dot" aria-hidden="true"></span>
+        Available for projects
+      </div>
+    </div>
+
+  </div>
 </section>
 
+<script>
+function smoothScrollTo(id) {
+  var el = document.getElementById(id);
+  if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  return false;
+}
+</script>
+
 <style>
-/* CTA Button Styles */
-.cta-button {
+/* ─── Hero Section ─────────────────────────────────────────── */
+.hero-section {
+  position: relative;
+  padding: 1.5rem 0 2.5rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+}
+
+/* Kicker badge */
+.hero-kicker {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  padding: 1rem 2.5rem;
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: white;
-  background: rgba(37, 99, 235, 0.9);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 2rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.3);
-  margin-bottom: 4rem;
-  position: relative;
-  overflow: hidden;
+  margin: 0 0 1rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(7, 18, 38, 0.78);
+  border: 1px solid rgba(112, 226, 255, 0.28);
+  color: #8cecff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  box-shadow: 0 16px 40px rgba(3, 9, 24, 0.18);
 }
 
-.cta-button::before {
-  content: '';
+/* Headline */
+.hero-title {
+  margin: 0;
+  color: #f8fbff;
+  font-size: clamp(2.7rem, 7vw, 5.2rem);
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  text-wrap: balance;
+  text-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+}
+
+.hero-role-block {
+  margin: 1.1rem 0 1.4rem;
+}
+
+.hero-role {
+  margin: 0;
+  color: rgba(224, 244, 255, 0.88);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Vision block */
+.hero-vision-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.15rem;
+  border-radius: 1rem;
+  background: rgba(8, 22, 52, 0.6);
+  border: 1px solid rgba(57, 212, 255, 0.22);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 28px rgba(0, 8, 24, 0.22), inset 0 1px 0 rgba(140, 236, 255, 0.07);
+}
+
+.hero-vision-label {
+  margin: 0 0 0.3rem;
+  color: #8cecff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero-vision-text {
+  margin: 0 0 0.75rem;
+  color: rgba(215, 238, 255, 0.9);
+  font-size: 0.97rem;
+  line-height: 1.65;
+}
+
+.hero-vision-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.hero-vision-list li {
+  color: rgba(195, 222, 245, 0.82);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.hero-vision-list li::before {
+  content: "•";
   position: absolute;
-  top: 0;
-  left: -100%;
+  left: 0;
+  color: #8cecff;
+  font-weight: 700;
+}
+
+.hero-vision-list li strong {
+  color: rgba(215, 238, 255, 0.95);
+}
+
+/* LinkedIn pitch block */
+.hero-pitch-block {
+  margin: 0 0 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.25rem;
+  padding: 1.4rem 1.6rem;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.hero-pitch-title {
+  margin: 0 0 0.65rem;
+  color: #8cecff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero-pitch-intro {
+  margin: 0 0 0.9rem;
+  color: rgba(215, 238, 255, 0.85);
+  font-size: 0.97rem;
+  line-height: 1.65;
+}
+
+.hero-pitch-intro strong {
+  color: #fff;
+}
+
+.hero-pitch-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.hero-pitch-list li {
+  color: rgba(195, 222, 245, 0.82);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.hero-pitch-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #8cecff;
+  font-weight: 700;
+}
+
+.hero-pitch-list li strong {
+  color: rgba(215, 238, 255, 0.95);
+}
+
+.hero-pitch-description {
+  margin: 0.9rem 0 0;
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(195, 222, 245, 0.75);
+  font-size: 0.93rem;
+  line-height: 1.65;
+}
+
+/* Description */
+.hero-description {
+  margin: 0 0 1.6rem;
+  max-width: 44rem;
+  color: rgba(221, 237, 247, 0.8);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Primary CTAs */
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.hero-cta-group .cta-button {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.cta-button-primary {
+  background: linear-gradient(135deg, #39d4ff, #0f7dff) !important;
+  border: 1px solid rgba(140, 236, 255, 0.18) !important;
+  box-shadow: 0 16px 32px rgba(10, 76, 166, 0.28) !important;
+}
+
+.cta-button-primary:hover {
+  background: linear-gradient(135deg, #69e3ff, #1e8cff) !important;
+}
+
+.cta-button-secondary {
+  background: rgba(4, 15, 34, 0.48) !important;
+  color: #dff8ff !important;
+  border: 1px solid rgba(140, 236, 255, 0.24) !important;
+  box-shadow: 0 12px 24px rgba(3, 12, 30, 0.22) !important;
+}
+
+.cta-button-secondary:hover {
+  background: rgba(4, 15, 34, 0.72) !important;
+  color: #ffffff !important;
+  border-color: rgba(140, 236, 255, 0.4) !important;
+}
+
+/* Navigation links row */
+.hero-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.2rem;
+  align-items: center;
+}
+
+.hero-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.38rem 0.85rem;
+  border-radius: 999px;
+  color: rgba(180, 220, 245, 0.82);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  border: 1px solid rgba(140, 236, 255, 0.14);
+  background: rgba(7, 20, 45, 0.38);
+  transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+.hero-nav-link:hover {
+  background: rgba(15, 40, 80, 0.65);
+  color: #c8eeff;
+  border-color: rgba(140, 236, 255, 0.32);
+  text-decoration: none;
+}
+
+/* ─── Right: Two photos stacked/offset ─────────────────────── */
+.hero-visual {
+  position: relative;
+  height: 420px;
+}
+
+.hero-photo-frame {
+  position: absolute;
+  border-radius: 1.6rem;
+  border: 1px solid rgba(113, 230, 255, 0.18);
+  overflow: hidden;
+  box-shadow: 0 28px 70px rgba(1, 8, 24, 0.38);
+}
+
+.hero-photo-img {
+  display: block;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.6s ease;
+  object-fit: cover;
+  object-position: center top;
 }
 
-.cta-button:hover::before {
-  left: 100%;
+.hero-photo-professional {
+  width: 54%;
+  height: 88%;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 
-.cta-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 40px rgba(37, 99, 235, 0.4);
-  background: rgba(29, 78, 216, 0.95);
-  border-color: rgba(255, 255, 255, 0.3);
+.hero-photo-leisure {
+  width: 50%;
+  height: 78%;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  border: 2px solid rgba(140, 236, 255, 0.22);
+  box-shadow: 0 18px 50px rgba(1, 8, 24, 0.45);
 }
 
-.cta-button:active {
-  transform: translateY(-1px);
+.hero-photo-label {
+  position: absolute;
+  top: 0.65rem;
+  left: 0.65rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(5, 14, 30, 0.82);
+  border: 1px solid rgba(140, 236, 255, 0.18);
+  color: rgba(200, 235, 255, 0.88);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  backdrop-filter: blur(10px);
 }
 
-@media (max-width: 768px) {
-  .cta-button {
-    padding: 0.875rem 1.5rem;
-    font-size: 1rem;
+.hero-photo-label-leisure {
+  background: rgba(15, 8, 36, 0.82);
+  border-color: rgba(160, 100, 255, 0.24);
+  color: rgba(210, 185, 255, 0.9);
+}
+
+.hero-photo-badge {
+  position: absolute;
+  bottom: -0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.42rem 1rem;
+  border-radius: 999px;
+  background: rgba(5, 14, 30, 0.9);
+  border: 1px solid rgba(140, 236, 255, 0.22);
+  color: rgba(210, 242, 255, 0.9);
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 12px 32px rgba(0, 8, 24, 0.3);
+  backdrop-filter: blur(14px);
+  z-index: 4;
+}
+
+.hero-photo-badge-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #34d87a;
+  box-shadow: 0 0 6px rgba(52, 216, 122, 0.7);
+  animation: pulse-dot 2.2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.65; transform: scale(0.82); }
+}
+
+/* ─── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-visual {
+    order: -1;
+    height: 280px;
   }
 }
 
-@media (max-width: 768px) {
-  .text-5xl {
-    font-size: 1.875rem;
-    /* Reduziert die Tagline-Größe auf mobilen Geräten */
+@media (max-width: 540px) {
+  .hero-section {
+    padding-top: 0.5rem;
+  }
+
+  .hero-visual {
+    height: 230px;
+  }
+
+  .hero-nav-links {
+    gap: 0.35rem;
   }
 }
 </style>

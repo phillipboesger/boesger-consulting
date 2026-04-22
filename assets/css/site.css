@@ -5,6 +5,33 @@ body {
   overflow-y: scroll;
 }
 
+/* Optional site-wide background image (set via params.backgroundImage in config.toml).
+   The image is fixed and softened so that content stays readable in light & dark mode. */
+body.has-bg-image {
+  background-image:
+    linear-gradient(rgba(5, 12, 28, 0.76), rgba(5, 12, 28, 0.88)),
+    var(--site-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+@media (prefers-color-scheme: dark) {
+  body.has-bg-image {
+    background-image:
+      linear-gradient(rgba(3, 8, 19, 0.82), rgba(3, 8, 19, 0.92)),
+      var(--site-bg-image);
+  }
+}
+
+@media (max-width: 768px) {
+  body.has-bg-image {
+    /* Fixed backgrounds can be choppy on mobile – fall back to scroll. */
+    background-attachment: scroll;
+  }
+}
+
 /* Fonts */
 
 /* inter-300 - latin */
@@ -507,7 +534,7 @@ body {
   text-align: center;
   position: relative;
   color: #1f2937;
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -521,20 +548,20 @@ body {
   transform: translateX(-50%);
   width: 80px;
   height: 3px;
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
   border-radius: 2px;
 }
 
 @media (prefers-color-scheme: dark) {
   .section-header {
-    background: linear-gradient(135deg, #60a5fa, #a78bfa);
+    background: linear-gradient(135deg, #60a5fa, #93c5fd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
   .section-header::after {
-    background: linear-gradient(135deg, #60a5fa, #a78bfa);
+    background: linear-gradient(135deg, #60a5fa, #93c5fd);
   }
 }
 
@@ -608,7 +635,7 @@ body {
   transform: translateX(-50%);
   width: 0;
   height: 3px;
-  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
   border-radius: 2px;
   transition: width 0.3s ease;
 }
@@ -633,7 +660,7 @@ body {
   }
   
   .contact-cta-link::before {
-    background: linear-gradient(90deg, #60a5fa, #a78bfa);
+    background: linear-gradient(90deg, #60a5fa, #93c5fd);
   }
 }
 
@@ -686,4 +713,194 @@ body {
     width: 2rem;
     height: 2rem;
   }
+}
+
+/* ============================================================
+   Modern CTA Section
+   ============================================================ */
+.cta-section {
+  padding: 2.5rem 1.5rem 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: 40rem;
+  width: 100%;
+  padding: 3rem 2.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.5rem;
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-inner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 110%, rgba(37, 99, 235, 0.14) 0%, transparent 68%);
+  pointer-events: none;
+}
+
+.cta-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #60a5fa;
+  opacity: 0.85;
+}
+
+.cta-heading {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  text-align: center;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.cta-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.5rem;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
+  position: relative;
+  z-index: 1;
+}
+
+.cta-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 36px rgba(37, 99, 235, 0.6);
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.cta-btn-primary:active {
+  transform: translateY(-1px);
+}
+
+.cta-btn-row {
+  display: flex;
+  gap: 0.875rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-btn-row > a {
+  flex: 1 1 auto;
+  justify-content: center;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.cta-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.5rem;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  text-decoration: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.cta-btn-secondary:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.06);
+  text-decoration: none !important;
+}
+
+.cta-btn-secondary:active {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .cta-section {
+    padding: 3rem 1rem 2.5rem;
+  }
+  .cta-inner {
+    padding: 2rem 1.5rem;
+  }
+  .cta-heading {
+    font-size: 1.5rem;
+  }
+}
+
+/* ============================================================
+   Modern Footer
+   ============================================================ */
+.footer-modern {
+  width: 100%;
+  text-align: center;
+  padding: 1.75rem 1.5rem 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  margin-top: 1rem;
+}
+
+.footer-copy {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.35);
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.footer-sep {
+  margin: 0 0.6em;
+  opacity: 0.4;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.45);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+}
+
+/* ============================================================
+   Social Icon Buttons
+   ============================================================ */
+.social-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.social-icon-btn:hover {
+  color: #93c5fd;
+  border-color: #60a5fa;
+  background: rgba(37, 99, 235, 0.12);
 }

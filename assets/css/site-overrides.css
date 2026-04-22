@@ -1,0 +1,52 @@
+/* Carousel: fade-out at left and right edges */
+.carousel-fade {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
+
+body.has-bg-image {
+  background-image:
+    linear-gradient(rgba(5, 12, 28, 0.76), rgba(5, 12, 28, 0.88)),
+    var(--site-bg-image);
+}
+
+@media (prefers-color-scheme: dark) {
+  body.has-bg-image {
+    background-image:
+      linear-gradient(rgba(3, 8, 19, 0.82), rgba(3, 8, 19, 0.92)),
+      var(--site-bg-image);
+  }
+}
+
+/* Mobile: Carousel → 2-spaltiges Raster, keine Scroll-Buttons */
+@media (max-width: 639px) {
+  .carousel-fade {
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+    overflow-x: visible !important;
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+  }
+
+  .carousel-fade > div {
+    width: calc(50% - 0.25rem) !important;
+    flex-shrink: 1 !important;
+    min-width: 0 !important;
+  }
+
+  .scroll-btn {
+    display: none !important;
+  }
+}
