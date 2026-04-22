@@ -18,7 +18,8 @@ module.exports = {
         'bg-black', 'bg-opacity-50', 'bg-white', 'dark:bg-gray-900', 'rounded-lg', 'shadow-lg',
         'max-w-2xl', 'w-full', 'mx-4', 'p-6', 'relative', 'animate-fade-in',
         'absolute', 'top-2', 'right-2', 'text-gray-400', 'hover:text-gray-700',
-        'dark:hover:text-gray-200', 'text-2xl', 'font-bold', 'text-gray-900', 'dark:text-gray-100'
+        'dark:hover:text-gray-200', 'text-2xl', 'font-bold', 'text-gray-900', 'dark:text-gray-100',
+        'has-bg-image'
       ]
     }
   },

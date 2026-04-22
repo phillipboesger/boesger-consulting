@@ -5,6 +5,33 @@ body {
   overflow-y: scroll;
 }
 
+/* Optional site-wide background image (set via params.backgroundImage in config.toml).
+   The image is fixed and softened so that content stays readable in light & dark mode. */
+body.has-bg-image {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)),
+    var(--site-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+@media (prefers-color-scheme: dark) {
+  body.has-bg-image {
+    background-image:
+      linear-gradient(rgba(17, 24, 39, 0.85), rgba(17, 24, 39, 0.85)),
+      var(--site-bg-image);
+  }
+}
+
+@media (max-width: 768px) {
+  body.has-bg-image {
+    /* Fixed backgrounds can be choppy on mobile – fall back to scroll. */
+    background-attachment: scroll;
+  }
+}
+
 /* Fonts */
 
 /* inter-300 - latin */

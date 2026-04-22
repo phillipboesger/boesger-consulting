@@ -5,18 +5,23 @@ title = "Bösger Digital"
 
 [params]
   name = "Bösger Digital"
-  description = "IT expert to take you further in the web and AI age"
+  description = "Phillip Bösger – Polarion expert, full-stack developer & AI enthusiast. Digital CV and portfolio."
   author = "Phillip Bösger"
   authorEmail = "consulting@boesger.com"
   authorImage = "/images/photo.webp"
   autoDarkMode = true
   favicon = "favicon.ico"
+  # Optional site-wide background image (drop a file into static/images and reference it here)
+  # backgroundImage = "/images/background.webp"
 
 [params.homepage]
   title = "Hey 👋 I'm Phillip"
-  tagline = "Software Developer, Polarion Expert & AI Enthusiast"
-  description = "Bringing innovative solutions & processes into your business"
+  tagline = "Polarion Expert, Full-Stack Developer & AI Enthusiast"
+  description = "This is my digital CV and portfolio – a look at who I am, what I build and where I'm taking Polarion next."
+  # Vision / LinkedIn-style headline – appears prominently in the hero
+  vision = "Less manual work, more AI in Polarion."
   contact = "https://www.linkedin.com/in/phillip-boesger-90691215a/"
+  linkedin = "https://www.linkedin.com/in/phillip-boesger-90691215a/"
 
 [[params.homepage.resume.work]]
   name = "Bösger Digital"
@@ -118,6 +123,36 @@ title = "Bösger Digital"
   name = "AI Automation: Build LLM Apps & AI Agents with n8n & APIs"
   provider = "Udemy"
   image = "/images/n8n.png"
+
+# ---------------------------------------------------------------------------
+# Projects & Portfolio
+# ---------------------------------------------------------------------------
+# Add new projects by appending another [[params.homepage.projects]] block.
+# Each entry supports:
+#   name        – project title
+#   tagline     – short pitch (1 line)
+#   description – longer description (HTML allowed)
+#   image       – preview image (path under /static)
+#   link        – optional external link (project page, repo, demo, …)
+#   linkLabel   – optional label for the link button (defaults to "Learn more")
+#   tags        – list of short keyword tags rendered as chips
+#   status      – optional badge text, e.g. "Coming soon", "In development"
+
+[[params.homepage.projects]]
+  name = "avaCopilot"
+  tagline = "AI Copilot bringing GenAI capabilities into Polarion ALM"
+  description = "An AI assistant for Polarion that turns repetitive ALM work into conversational, automated workflows – aligned with my mission to bring less manual work and more AI into Polarion."
+  image = "/images/chatGPT.png"
+  tags = ["Polarion", "GenAI", "Automation"]
+  status = "In development"
+
+[[params.homepage.projects]]
+  name = "More projects coming soon"
+  tagline = "Hands-on AI agents, automations and Polarion extensions"
+  description = "Additional case studies and side projects will be added here. Stay tuned."
+  image = "/images/n8n.png"
+  tags = ["AI Agents", "n8n", "Polarion"]
+  status = "Coming soon"
 
 [params.homepage.social]
   linkedin = "https://www.linkedin.com/in/phillip-boesger-90691215a/"
