@@ -198,5 +198,3 @@ These aren't buzzwords. They're the things I actually try to live by in every en
 </div>
 
 I prefer honest conversations over polished status updates. If something's off, I'll say so. If I need more context, I'll ask. I'd rather raise a concern early than silently push through something that doesn't feel right.
-
-
