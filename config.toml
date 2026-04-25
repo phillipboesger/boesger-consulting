@@ -154,7 +154,7 @@ title = "Bösger Digital"
   image = "/images/polarion.png"
   link = "https://github.com/phillipboesger/polarion.code.editor-download/releases"
   linkLabel = "Download on GitHub"
-  tags = ["Polarion", "Monaco Editor", "Open Source"]
+  tags = ["Polarion", "Monaco Editor", "Open Source", "Community Extension"]
   status = "Free Download"
 
 [[params.homepage.projects]]
@@ -164,8 +164,16 @@ title = "Bösger Digital"
   image = "/images/CI_CD.png"
   link = "https://github.com/phillipboesger/polarion-docker"
   linkLabel = "View on GitHub"
-  tags = ["Docker", "Polarion", "Open Source"]
+  tags = ["Docker", "Polarion", "Open Source", "Community Extension"]
   status = "Open Source"
+
+[params.homepage.comingSoon]
+  ideas = [
+    "Custom Permissions Plugin for Polarion",
+    "GitHub Workflow for lean Polarion releases with full unit and UI test coverage on every build",
+    "AI Platform Integrations & Agent Frameworks directly inside Polarion",
+    "… and much more"
+  ]
 
 [params.homepage.social]
   linkedin = "https://www.linkedin.com/in/phillip-boesger-90691215a/"
