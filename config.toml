@@ -167,6 +167,22 @@ title = "Bösger Digital"
   tags = ["Docker", "Polarion", "Open Source"]
   status = "Open Source"
 
+[[params.homepage.projects]]
+  name = "Community Extension"
+  tagline = "A free, open Polarion extension built for the community"
+  description = "A dedicated Polarion extension designed for the community – with practical utilities, quality-of-life improvements and open-source components that every Polarion team can use out of the box."
+  image = "/images/icon.png"
+  tags = ["Polarion", "Open Source", "Community"]
+  status = "Coming Soon"
+
+[[params.homepage.projects]]
+  name = "AI Platforms & Integrations"
+  tagline = "Connecting Polarion to AI platforms and intelligent toolchains"
+  description = "Seamlessly bridging Polarion with modern AI platforms – from LLM orchestration layers and agent frameworks to smart integrations that bring external intelligence directly into your ALM workflows."
+  image = "/images/chatGPT.png"
+  tags = ["AI", "Polarion", "Integrations", "Automation"]
+  status = "Coming Soon"
+
 [params.homepage.social]
   linkedin = "https://www.linkedin.com/in/phillip-boesger-90691215a/"
   github = "https://github.com/phillipboesger"
