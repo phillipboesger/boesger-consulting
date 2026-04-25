@@ -169,11 +169,11 @@ title = "Bösger Digital"
 
 [params.homepage.comingSoon]
   ideas = [
-    "Custom Permissions Plugin für Polarion",
-    "GitHub Workflow für schlanke Polarion Releases mit vollständiger Unit- und UI-Abdeckung beim Build",
-    "Community Extension – kostenlose Open-Source Erweiterung für Polarion",
-    "AI-Plattform Integrationen & Agent-Frameworks direkt in Polarion",
-    "… und vieles mehr"
+    "Custom Permissions Plugin for Polarion",
+    "GitHub Workflow for lean Polarion releases with full unit and UI test coverage on every build",
+    "Community Extension – a free, open-source Polarion extension for everyone",
+    "AI Platform Integrations & Agent Frameworks directly inside Polarion",
+    "… and much more"
   ]
 
 [params.homepage.social]
