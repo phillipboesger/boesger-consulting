@@ -148,6 +148,16 @@ title = "Bösger Digital"
   status = "Active"
 
 [[params.homepage.projects]]
+  name = "AI Enablement Hub for Polarion"
+  tagline = "AI coaching that empowers developers, users & teams to truly leverage AI"
+  description = "A growing AI coaching program built right into my Polarion blog – created hand in hand with customers and continuously expanded. The mission: share knowledge openly and enable developers, users, and everyone in between to use AI fully and meaningfully in their daily work."
+  image = "/images/education.png"
+  link = "https://polarion.boesger.com/tag/ai-enablement-hub/"
+  linkLabel = "Explore the Hub"
+  tags = ["AI Coaching", "Enablement", "Polarion", "Knowledge Sharing"]
+  status = "Growing"
+
+[[params.homepage.projects]]
   name = "Polarion Code Editor"
   tagline = "VS Code-style file editor built directly into the Polarion Admin panel"
   description = "Stop checking out. Edit Velocity macros, JSON configs, and XML files directly inside Polarion – no SVN client needed. Powered by the Monaco Engine (the same engine behind VS Code) with syntax highlighting, auto-formatting, and persistent sessions."
