@@ -135,7 +135,7 @@ title = "Bösger Digital"
   description = "An AI assistant for Polarion that turns repetitive ALM work into conversational, automated workflows – aligned with my mission to bring less manual work and more AI into Polarion."
   image = "/images/chatGPT.png"
   tags = ["Polarion", "GenAI", "Automation"]
-  status = "Coming Soon"
+  status = "Available"
 
 [[params.homepage.projects]]
   name = "Sharing Knowledge with the Community"
