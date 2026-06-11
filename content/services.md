@@ -12,9 +12,21 @@ description: "Two ways to engage with Bösger Digital — custom Polarion develo
   }
   .engage-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1.5rem;
     margin: 0 0 2.5rem;
+  }
+  /* From tablet up, show all three cards in one row. The grid breaks out of
+     the prose text column (which caps around 64rem) and centres on the
+     viewport so each card keeps a comfortable width. Safe because no
+     ancestor clips overflow, and the article is mx-auto centred. */
+  @media (min-width: 768px) {
+    .engage-grid {
+      grid-template-columns: repeat(3, 1fr);
+      width: min(72rem, calc(100vw - 3rem));
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
   }
   /* Selectors are scoped under .engage-grid so they out-specify the
      surrounding `.prose` typography styles (spacing, list markers, etc.). */
@@ -242,18 +254,15 @@ description: "Two ways to engage with Bösger Digital — custom Polarion develo
   }
 
   @media (max-width: 640px) {
-    .engage-grid {
-      grid-template-columns: 1fr;
-    }
     .wwm-table tr td:first-child {
       white-space: normal;
     }
   }
 </style>
 
-<p class="wwm-subtitle">Two ways to engage — both remote-first, both results-focused.</p>
+<p class="wwm-subtitle">Three ways to engage — all remote-first, all results-focused.</p>
 
-<div class="engage-grid"><div class="engage-card"><div class="engage-head"><span class="engage-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span><span class="engage-tag">Dev</span></div><h2 class="engage-title">Custom Polarion Development</h2><p class="engage-lead">You need a feature built. I take it from spec to production.</p><ul class="engage-list"><li>Custom Polarion extensions: Java, REST API, Velocity templates, workflow rules</li><li>CI/CD pipelines with automated release documentation (GitHub Actions, Jenkins, Maven)</li><li>AI-assisted development — same quality, faster delivery</li><li>Full lifecycle: requirements, architecture, implementation, testing, deployment</li></ul><p class="engage-bestfor"><strong>Best for:</strong> Teams who know what they need and want a senior developer who delivers without hand-holding.</p></div><div class="engage-card"><div class="engage-head"><span class="engage-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span class="engage-tag">Enablement</span></div><h2 class="engage-title">Coaching &amp; AI Adoption</h2><p class="engage-lead">Your team has Polarion (or Siemens Polarion X / Copilot) and isn't getting the ROI from it. I run hands-on assessments and coaching sprints that change that.</p><ul class="engage-list"><li>Workflow assessment: where is your team actually losing time in Polarion?</li><li>AI toolchain setup: practical integration of AI into daily Polarion work</li><li>Team coaching sprints: hands-on, not slide-deck-driven</li><li>Built on the same methodology behind avaCopilot</li></ul><p class="engage-bestfor"><strong>Best for:</strong> Teams or individuals who want to get more out of the tools they already have.</p></div></div>
+<div class="engage-grid"><div class="engage-card"><div class="engage-head"><span class="engage-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span><span class="engage-tag">Dev</span></div><h2 class="engage-title">Custom Polarion Development</h2><p class="engage-lead">You need a feature built. I take it from spec to production.</p><ul class="engage-list"><li>Custom Polarion extensions: Java, REST API, Velocity templates, workflow rules</li><li>CI/CD pipelines with automated release documentation (GitHub Actions, Jenkins, Maven)</li><li>AI-assisted development — same quality, faster delivery</li><li>Full lifecycle: requirements, architecture, implementation, testing, deployment</li></ul><p class="engage-bestfor"><strong>Best for:</strong> Teams who know what they need and want a senior developer who delivers without hand-holding.</p></div><div class="engage-card"><div class="engage-head"><span class="engage-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span class="engage-tag">Enablement</span></div><h2 class="engage-title">Coaching &amp; AI Adoption</h2><p class="engage-lead">Your team has Polarion (or Siemens Polarion X / Copilot) and isn't getting the ROI from it. I run hands-on assessments and coaching sprints that change that.</p><ul class="engage-list"><li>Workflow assessment: where is your team actually losing time in Polarion?</li><li>AI toolchain setup: practical integration of AI into daily Polarion work</li><li>Team coaching sprints: hands-on, not slide-deck-driven</li><li>Built on the same methodology behind avaCopilot</li></ul><p class="engage-bestfor"><strong>Best for:</strong> Teams or individuals who want to get more out of the tools they already have.</p></div><div class="engage-card"><div class="engage-head"><span class="engage-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span><span class="engage-tag">Beyond</span></div><h2 class="engage-title">AI Development &amp; Transformation</h2><p class="engage-lead">Not everything is a Polarion problem. I bring my full development stack and AI know-how to wherever you need support.</p><ul class="engage-list"><li>Full-stack &amp; AI development: web apps, automations, integrations, internal tools</li><li>Hands-on support through digital, ALM and AI transformations</li><li>Custom AI agents and workflow automation built around your processes</li><li>Senior engineering capacity, embedded in your team where the gaps are</li></ul><p class="engage-bestfor"><strong>Best for:</strong> Teams navigating change who need a versatile developer beyond the Polarion world.</p></div></div>
 
 ## How to work together
 
