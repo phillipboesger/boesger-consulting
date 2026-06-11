@@ -10,24 +10,21 @@
         <p class="hero-role">{{ .Site.Params.homepage.tagline }}</p>
       </div>
 
-      <!-- Vision block -->
-      <div class="hero-vision-block">
-        <div>
-          <p class="hero-vision-label">My Vision</p>
-          <p class="hero-vision-text">AI that replaces manual work in Polarion — smarter workflows, less overhead, faster delivery. No hype, just working automation.</p>
-        </div>
-      </div>
-
-      <!-- LinkedIn pitch block -->
+      <!-- Positioning: two service modes -->
       <div class="hero-pitch-block">
-        <p class="hero-pitch-title">How I accelerate your development cycles</p>
-        <p class="hero-pitch-intro">Ten years of working with Polarion taught me exactly where teams lose time. I bridge the gap between requirements management and technical execution. <strong>I do not just consult. I build. And I build fast.</strong></p>
-        <ul class="hero-pitch-list">
-          <li><strong>Full Lifecycle Expertise:</strong> From strategic consulting and requirements to final rollout.</li>
-          <li><strong>AI-Driven Development:</strong> Fast, adaptable and fully documented AI features for Polarion.</li>
-          <li><strong>Pipeline Automation:</strong> Replacing manual clicks with smart and automated workflows.</li>
-        </ul>
-        <p class="hero-pitch-description">{{ .Site.Params.homepage.description }}</p>
+        <p class="hero-pitch-intro hero-pitch-lead">8 years of Polarion — from Siemens enterprise to startup. I bridge the gap between requirements management and technical execution. <strong>I do not just consult. I build. And I build fast.</strong></p>
+        <p class="hero-modes-label">I work in two modes</p>
+        <div class="hero-modes">
+          <div class="hero-mode">
+            <p class="hero-mode-title"><span class="hero-mode-arrow">→</span> Dev</p>
+            <p class="hero-mode-text">Custom Polarion extensions from spec to production. Java, REST, Velocity, workflows, CI/CD with automated release documentation. Powered by AI toolchains for faster delivery without cutting corners.</p>
+          </div>
+          <div class="hero-mode">
+            <p class="hero-mode-title"><span class="hero-mode-arrow">→</span> Enablement</p>
+            <p class="hero-mode-text">If your team has Siemens Polarion X or AI tools and isn't getting ROI from them, I run hands-on assessments and coaching sprints that change that.</p>
+          </div>
+        </div>
+        <p class="hero-availability"><span class="hero-availability-dot" aria-hidden="true"></span> Available now. Remote across DACH.</p>
       </div>
 
       <!-- Primary CTAs -->
@@ -285,6 +282,78 @@ function smoothScrollTo(id) {
   line-height: 1.65;
 }
 
+/* Two-mode positioning */
+.hero-pitch-lead {
+  margin-bottom: 1.1rem;
+  color: rgba(224, 244, 255, 0.92);
+  font-size: 1rem;
+}
+
+.hero-modes-label {
+  margin: 0 0 0.7rem;
+  color: #8cecff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero-modes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+}
+
+.hero-mode {
+  padding: 0.9rem 1rem;
+  border-radius: 0.9rem;
+  background: rgba(8, 22, 52, 0.5);
+  border: 1px solid rgba(140, 236, 255, 0.16);
+}
+
+.hero-mode-title {
+  margin: 0 0 0.35rem;
+  color: #fff;
+  font-size: 0.98rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.hero-mode-arrow {
+  color: #39d4ff;
+  font-weight: 800;
+}
+
+.hero-mode-text {
+  margin: 0;
+  color: rgba(195, 222, 245, 0.82);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.hero-availability {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.1rem 0 0;
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(215, 238, 255, 0.9);
+  font-size: 0.93rem;
+  font-weight: 600;
+}
+
+.hero-availability-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #34d87a;
+  box-shadow: 0 0 6px rgba(52, 216, 122, 0.7);
+  animation: pulse-dot 2.2s ease-in-out infinite;
+}
+
 /* Description */
 .hero-description {
   margin: 0 0 1.6rem;
@@ -485,6 +554,10 @@ function smoothScrollTo(id) {
 
   .hero-nav-links {
     gap: 0.35rem;
+  }
+
+  .hero-modes {
+    grid-template-columns: 1fr;
   }
 }
 </style>
