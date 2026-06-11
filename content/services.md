@@ -117,6 +117,13 @@ description: "Two ways to engage with Bösger Digital — custom Polarion develo
     position: absolute;
     left: 0;
     top: 0;
+    /* Reset the gray circle the `.prose ul>li::before` rule otherwise
+       leaves behind (content/left/color are overridden, but background,
+       size and border-radius cascade per-property and must be cleared). */
+    width: auto;
+    height: auto;
+    background: none;
+    border-radius: 0;
     color: #2563eb;
     font-weight: 800;
   }
