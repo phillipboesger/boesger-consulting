@@ -250,7 +250,7 @@ description: "Two ways to engage with Bösger Digital — custom Polarion develo
 
 ## How to work together
 
-<div class="cta-panel"><!-- TODO: Replace the Calendly URL below with Phillip's real booking link --><a href="https://calendly.com/" target="_blank" rel="noopener noreferrer" class="cta-book">📅 Book a free 30-minute intro call</a><p class="cta-direct">📩 Or reach out directly: <a href="mailto:digital@boesger.com">digital@boesger.com</a> · <a href="https://www.linkedin.com/in/phillip-boesger-90691215a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p></div>
+<div class="cta-panel"><a href="https://calendly.com/phillip-boesger/30min" target="_blank" rel="noopener noreferrer" class="cta-book">📅 Book a free 30-minute intro call</a><p class="cta-direct">📩 Or reach out directly: <a href="mailto:digital@boesger.com">digital@boesger.com</a> · <a href="https://www.linkedin.com/in/phillip-boesger-90691215a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p></div>
 
 ## Working Style
 
