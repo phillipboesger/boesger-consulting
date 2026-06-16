@@ -177,6 +177,16 @@ title = "Bösger Digital"
   tags = ["Docker", "Polarion", "Open Source", "Community Extension"]
   status = "Open Source"
 
+[[params.homepage.projects]]
+  name = "Polarion MCP"
+  tagline = "Connect Claude, ChatGPT & Copilot directly to Polarion ALM"
+  description = "An open-source MCP server that exposes ~210 Polarion REST operations as tools for AI assistants. Works with Claude Desktop, Claude Code, GitHub Copilot, ChatGPT and Claude.ai – so your AI can create, search and update work items right inside Polarion. Built in TypeScript with stdio, HTTP MCP &amp; REST transports plus Docker deployment."
+  image = "/images/chatGPT.png"
+  link = "https://github.com/phillipboesger/polarion-mcp"
+  linkLabel = "View on GitHub"
+  tags = ["Polarion", "MCP Server", "AI Integration", "Open Source"]
+  status = "Open Source"
+
 [params.homepage.comingSoon]
   ideas = [
     "Custom Permissions Plugin for Polarion",
