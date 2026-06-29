@@ -81,11 +81,9 @@
         min-width: 200px;
       }
 
-      @media (prefers-color-scheme: dark) {
-        #mobile-nav-dropdown {
-          background: rgba(17, 24, 39, 0.95);
-          border-color: rgba(55, 65, 81, 0.5);
-        }
+      #mobile-nav-dropdown {
+        background: rgba(17, 24, 39, 0.95);
+        border-color: rgba(55, 65, 81, 0.5);
       }
 
       #mobile-nav-dropdown a {
@@ -121,15 +119,13 @@
         transform: translateX(4px);
       }
 
-      @media (prefers-color-scheme: dark) {
-        #mobile-nav-dropdown a {
-          color: #f3f4f6;
-        }
+      #mobile-nav-dropdown a {
+        color: #f3f4f6;
+      }
 
-        #mobile-nav-dropdown a:hover {
-          background: rgba(59, 130, 246, 0.2);
-          color: #60a5fa;
-        }
+      #mobile-nav-dropdown a:hover {
+        background: rgba(59, 130, 246, 0.2);
+        color: #60a5fa;
       }
       
       /* Brand Link Styles */
@@ -167,13 +163,11 @@
         color: #2563eb;
       }
       
-      @media (prefers-color-scheme: dark) {
-        .brand-link:hover {
-          background: rgba(96, 165, 250, 0.15);
-          border-color: rgba(96, 165, 250, 0.3);
-          color: #60a5fa;
-          box-shadow: 0 4px 16px rgba(96, 165, 250, 0.1);
-        }
+      .brand-link:hover {
+        background: rgba(96, 165, 250, 0.15);
+        border-color: rgba(96, 165, 250, 0.3);
+        color: #60a5fa;
+        box-shadow: 0 4px 16px rgba(96, 165, 250, 0.1);
       }
       
       /* Email Link Styles */
@@ -220,13 +214,11 @@
         transform: rotate(5deg);
       }
       
-      @media (prefers-color-scheme: dark) {
-        .email-link:hover {
-          background: rgba(96, 165, 250, 0.15);
-          border-color: rgba(96, 165, 250, 0.3);
-          color: #60a5fa;
-          box-shadow: 0 4px 16px rgba(96, 165, 250, 0.1);
-        }
+      .email-link:hover {
+        background: rgba(96, 165, 250, 0.15);
+        border-color: rgba(96, 165, 250, 0.3);
+        color: #60a5fa;
+        box-shadow: 0 4px 16px rgba(96, 165, 250, 0.1);
       }
     </style>
     <button id="mobile-nav-btn" aria-label="Open menu"
@@ -281,17 +273,15 @@
           text-decoration: none;
         }
 
-        @media (prefers-color-scheme: dark) {
-          .nav-box {
-            background: rgba(17, 24, 39, 0.8);
-            border-color: rgba(55, 65, 81, 0.5);
-          }
+        .nav-box {
+          background: rgba(17, 24, 39, 0.8);
+          border-color: rgba(55, 65, 81, 0.5);
+        }
 
-          .nav-box:hover {
-            background: rgba(59, 130, 246, 0.2);
-            border-color: rgba(59, 130, 246, 0.5);
-            color: #60a5fa;
-          }
+        .nav-box:hover {
+          background: rgba(59, 130, 246, 0.2);
+          border-color: rgba(59, 130, 246, 0.5);
+          color: #60a5fa;
         }
       </style>
       {{ with .Site.GetPage "/cv" }}

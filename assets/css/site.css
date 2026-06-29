@@ -17,12 +17,10 @@ body.has-bg-image {
   background-repeat: no-repeat;
 }
 
-@media (prefers-color-scheme: dark) {
-  body.has-bg-image {
-    background-image:
-      linear-gradient(rgba(3, 8, 19, 0.82), rgba(3, 8, 19, 0.92)),
-      var(--site-bg-image);
-  }
+body.has-bg-image {
+  background-image:
+    linear-gradient(rgba(3, 8, 19, 0.82), rgba(3, 8, 19, 0.92)),
+    var(--site-bg-image);
 }
 
 @media (max-width: 768px) {
@@ -225,43 +223,41 @@ body.has-bg-image {
   font-size: 1.1em;
 }
 
-@media (prefers-color-scheme: dark) {
-  .modal-glass {
-    background: rgba(17, 24, 39, 0.98);
-    border-color: rgba(55, 65, 81, 0.6);
-    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3), 0 10px 40px rgba(0, 0, 0, 0.15);
-  }
-  
-  .close-button {
-    background: rgba(17, 24, 39, 0.9);
-    border-color: rgba(55, 65, 81, 0.5);
-    color: #f3f4f6;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .close-button::before {
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-  }
-  
-  .close-button:hover {
-    background: rgba(31, 41, 55, 0.95);
-    border-color: rgba(75, 85, 99, 0.4);
-    color: #f9fafb;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  }
-  
-  .modal-content {
-    color: #f3f4f6;
-    background: rgba(17, 24, 39, 0.6);
-  }
-  
-  .modal-content li {
-    color: #f3f4f6;
-  }
-  
-  .modal-content ul li::marker {
-    color: #60a5fa;
-  }
+.modal-glass {
+  background: rgba(17, 24, 39, 0.98);
+  border-color: rgba(55, 65, 81, 0.6);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3), 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.close-button {
+  background: rgba(17, 24, 39, 0.9);
+  border-color: rgba(55, 65, 81, 0.5);
+  color: #f3f4f6;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.close-button::before {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+.close-button:hover {
+  background: rgba(31, 41, 55, 0.95);
+  border-color: rgba(75, 85, 99, 0.4);
+  color: #f9fafb;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+  color: #f3f4f6;
+  background: rgba(17, 24, 39, 0.6);
+}
+
+.modal-content li {
+  color: #f3f4f6;
+}
+
+.modal-content ul li::marker {
+  color: #60a5fa;
 }
 
 @media (max-width: 768px) {
@@ -436,28 +432,26 @@ body.has-bg-image {
   box-shadow: 0 12px 40px rgba(37, 99, 235, 0.2);
 }
 
-@media (prefers-color-scheme: dark) {
-  .resume-card {
-    background: rgba(17, 24, 39, 0.9);
-    border-color: rgba(55, 65, 81, 0.5);
-  }
-  
-  .resume-card:hover {
-    background: rgba(17, 24, 39, 0.95);
-    border-color: rgba(96, 165, 250, 0.4);
-    box-shadow: 0 16px 48px rgba(96, 165, 250, 0.1);
-  }
-  
-  .course-card {
-    background: rgba(96, 165, 250, 0.1);
-    border-color: rgba(96, 165, 250, 0.3);
-  }
-  
-  .course-card:hover {
-    background: rgba(96, 165, 250, 0.15);
-    border-color: rgba(96, 165, 250, 0.4);
-    box-shadow: 0 12px 40px rgba(96, 165, 250, 0.15);
-  }
+.resume-card {
+  background: rgba(17, 24, 39, 0.9);
+  border-color: rgba(55, 65, 81, 0.5);
+}
+
+.resume-card:hover {
+  background: rgba(17, 24, 39, 0.95);
+  border-color: rgba(96, 165, 250, 0.4);
+  box-shadow: 0 16px 48px rgba(96, 165, 250, 0.1);
+}
+
+.course-card {
+  background: rgba(96, 165, 250, 0.1);
+  border-color: rgba(96, 165, 250, 0.3);
+}
+
+.course-card:hover {
+  background: rgba(96, 165, 250, 0.15);
+  border-color: rgba(96, 165, 250, 0.4);
+  box-shadow: 0 12px 40px rgba(96, 165, 250, 0.15);
 }
 
 /* Scroll Button Styles */
@@ -511,19 +505,17 @@ body.has-bg-image {
   right: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  .scroll-btn {
-    background: rgba(17, 24, 39, 0.9);
-    border-color: rgba(55, 65, 81, 0.5);
-    color: #f3f4f6;
-  }
-  
-  .scroll-btn:hover {
-    background: rgba(96, 165, 250, 0.1);
-    border-color: rgba(96, 165, 250, 0.3);
-    color: #60a5fa;
-    box-shadow: 0 12px 40px rgba(96, 165, 250, 0.15);
-  }
+.scroll-btn {
+  background: rgba(17, 24, 39, 0.9);
+  border-color: rgba(55, 65, 81, 0.5);
+  color: #f3f4f6;
+}
+
+.scroll-btn:hover {
+  background: rgba(96, 165, 250, 0.1);
+  border-color: rgba(96, 165, 250, 0.3);
+  color: #60a5fa;
+  box-shadow: 0 12px 40px rgba(96, 165, 250, 0.15);
 }
 
 /* Section Header Styles */
@@ -552,17 +544,15 @@ body.has-bg-image {
   border-radius: 2px;
 }
 
-@media (prefers-color-scheme: dark) {
-  .section-header {
-    background: linear-gradient(135deg, #60a5fa, #93c5fd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  
-  .section-header::after {
-    background: linear-gradient(135deg, #60a5fa, #93c5fd);
-  }
+.section-header {
+  background: linear-gradient(135deg, #60a5fa, #93c5fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-header::after {
+  background: linear-gradient(135deg, #60a5fa, #93c5fd);
 }
 
 /* CTA Button Styles */
@@ -650,18 +640,16 @@ body.has-bg-image {
   text-decoration: none !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  .contact-cta-link {
-    color: #60a5fa !important;
-  }
-  
-  .contact-cta-link:hover {
-    color: #93c5fd !important;
-  }
-  
-  .contact-cta-link::before {
-    background: linear-gradient(90deg, #60a5fa, #93c5fd);
-  }
+.contact-cta-link {
+  color: #60a5fa !important;
+}
+
+.contact-cta-link:hover {
+  color: #93c5fd !important;
+}
+
+.contact-cta-link::before {
+  background: linear-gradient(90deg, #60a5fa, #93c5fd);
 }
 
 /* Responsive Design Improvements */
