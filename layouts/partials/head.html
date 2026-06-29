@@ -31,16 +31,8 @@
   <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" />
   {{ end -}}
 
-  {{ if .Site.Params.autoDarkMode }}
-  <script>
-    // On page load or when changing themes
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  </script>
-  {{ end }}
+  <meta name="color-scheme" content="dark" />
+  <script>document.documentElement.classList.add("dark");</script>
 
   {{ with .Site.Params.authorImage }}
   <link rel="preload" as="image" href="{{ . }}" />

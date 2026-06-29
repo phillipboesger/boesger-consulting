@@ -9,7 +9,7 @@ title = "Bösger Digital"
   author = "Phillip Bösger"
   authorEmail = "consulting@boesger.com"
   authorImage = "/images/photo.webp"
-  autoDarkMode = true
+  autoDarkMode = false
   favicon = "favicon.ico"
   backgroundImage = "/images/background.png"
 

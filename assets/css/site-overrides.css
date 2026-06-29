@@ -22,12 +22,10 @@ body.has-bg-image {
     var(--site-bg-image);
 }
 
-@media (prefers-color-scheme: dark) {
-  body.has-bg-image {
-    background-image:
-      linear-gradient(rgba(3, 8, 19, 0.82), rgba(3, 8, 19, 0.92)),
-      var(--site-bg-image);
-  }
+body.has-bg-image {
+  background-image:
+    linear-gradient(rgba(3, 8, 19, 0.82), rgba(3, 8, 19, 0.92)),
+    var(--site-bg-image);
 }
 
 /* Mobile: Carousel → 2-spaltiges Raster, keine Scroll-Buttons */
