@@ -130,6 +130,16 @@ title = "Bösger Digital"
 #   status      – optional badge text, e.g. "Coming soon", "In development"
 
 [[params.homepage.projects]]
+  name = "AI Enablement Hub"
+  tagline = "GitHub Copilot — finally used right"
+  description = "6 weeks of structured AI coaching for Polarion developers: setup, debugging workflows, 800+ AI-generated unit tests, Playwright UI tests, and direct MCP integration. On demand, from €149."
+  image = "/images/chatGPT.png"
+  link = "/ai-hub"
+  linkLabel = "View the Hub"
+  tags = ["AI Coaching", "GitHub Copilot", "Polarion"]
+  status = "On Demand"
+
+[[params.homepage.projects]]
   name = "avaCopilot"
   tagline = "AI Copilot bringing GenAI capabilities into Polarion ALM"
   description = "An AI assistant for Polarion that turns repetitive ALM work into conversational, automated workflows – aligned with my mission to bring less manual work and more AI into Polarion."
@@ -162,9 +172,19 @@ title = "Bösger Digital"
   tagline = "Run Polarion ALM in containers – on macOS, Windows & Linux"
   description = "A fully automated Dockerfile &amp; setup scripts that containerize a fresh Polarion ALM installation with zero manual effort – including WebSocket, SVN, PostgreSQL auto-config, and one-click remote debugging. Supports Docker, Podman, and Apple <code>container</code> on Apple Silicon."
   image = "/images/CI_CD.png"
-  link = "https://github.com/phillipboesger/polarion-docker"
-  linkLabel = "View on GitHub"
+  link = "https://phillipboesger.github.io/polarion-docker/"
+  linkLabel = "View Product Page"
   tags = ["Docker", "Polarion", "Open Source"]
+  status = "Open Source"
+
+[[params.homepage.projects]]
+  name = "Polarion MCP Server"
+  tagline = "Copilot gets direct access to your Polarion backlog"
+  description = "No more copy-pasting between Polarion and VS Code. The MCP Server connects GitHub Copilot directly to your work items — read tickets, understand context, write implementation-ready code. 271 tools, zero switching."
+  image = "/images/n8n.png"
+  link = "https://polarion-mcp.boesger.com"
+  linkLabel = "View Product Page"
+  tags = ["MCP", "GitHub Copilot", "Open Source"]
   status = "Open Source"
 
 [params.homepage.social]

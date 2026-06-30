@@ -198,3 +198,11 @@ These aren't buzzwords. They're the things I actually try to live by in every en
 </div>
 
 I prefer honest conversations over polished status updates. If something's off, I'll say so. If I need more context, I'll ask. I'd rather raise a concern early than silently push through something that doesn't feel right.
+
+## Coaching & AI Adaption
+
+<div class="collab-box" style="border-color:rgba(59,168,241,0.3);">
+<span class="collab-icon">✦</span>
+<div class="collab-title" style="color:#3BA8F1;">AI Enablement Hub</div>
+Beyond project work, I run structured AI enablement coaching for Polarion development teams. If that's what you're looking for — <a href="/ai-hub" style="color:#3BA8F1;font-weight:600;">explore the AI Enablement Hub →</a>
+</div>
