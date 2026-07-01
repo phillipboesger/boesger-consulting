@@ -1,6 +1,6 @@
 ---
 title: "AI-Enablement Hub"
-description: "6-week AI coaching for Polarion developers – GitHub Copilot, VS Code, MCP and AI-powered testing. Available on demand."
+description: "AI coaching for Polarion developers – GitHub Copilot, VS Code, MCP and AI-powered testing. Available on demand."
 ---
 
 <style>
@@ -77,14 +77,14 @@ article.prose { max-width: 100% !important; padding: 0 !important; }
 <div class="hub-hero">
 <div class="hub-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg> AI-Enablement Hub · On Demand</div>
 <h1 class="hub-h1">GitHub Copilot.<br><span>Finally used right.</span></h1>
-<p class="hub-sub">6 weeks of structured AI coaching for Polarion developers — from initial setup to real test automation with AI. Proven in production, now available on demand.</p>
+<p class="hub-sub">Structured AI coaching for Polarion developers — from initial setup to real test automation with AI. Proven in production, now available on demand.</p>
 <div class="hub-cta-row"><a href="mailto:consulting@boesger.com?subject=AI-Enablement Hub – Access" class="btn-primary">Get Access — from €149</a> <a href="mailto:consulting@boesger.com?subject=AI-Enablement Hub – Team Inquiry" class="btn-outline">Request Team Package</a></div>
 </div>
 
 <div class="hub-section">
 <div class="hub-proof">
-<div><div class="hub-stat-num">6</div><div class="hub-stat-label">Weeks of intensive coaching material</div></div>
-<div><div class="hub-stat-num">800+</div><div class="hub-stat-label">AI-generated unit tests from week 4</div></div>
+<div><div class="hub-stat-num">6+</div><div class="hub-stat-label">Deep-dive coaching modules</div></div>
+<div><div class="hub-stat-num">800+</div><div class="hub-stat-label">AI-generated unit tests</div></div>
 <div><div class="hub-stat-num">100%</div><div class="hub-stat-label">Practice-based — real Polarion tickets</div></div>
 <div><div class="hub-stat-num">On<br>Demand</div><div class="hub-stat-label">Instant access to all materials</div></div>
 </div>
@@ -104,8 +104,8 @@ article.prose { max-width: 100% !important; padding: 0 !important; }
 <hr class="hub-divider">
 
 <div class="hub-section">
-<h2 class="hub-section-title">The Programme — 6 Weeks</h2>
-<p class="hub-section-sub">Each week covers one concrete topic. No theory overhead — every piece of content is immediately applicable in Polarion projects.</p>
+<h2 class="hub-section-title">The Programme</h2>
+<p class="hub-section-sub">Each module covers one concrete topic. No theory overhead — every piece of content is immediately applicable in Polarion projects. Scope is tailored to your team.</p>
 <div class="hub-curriculum">
 <div class="hub-week"><span class="hub-week-num">Session 0</span><div><div class="hub-week-title">Foundation Setup — VS Code, GitHub Copilot &amp; Docker</div><p class="hub-week-desc">A unified development environment for everyone. Before the first ticket is touched, every machine runs on the same baseline. No more "it works on my machine".</p></div></div>
 <div class="hub-week"><span class="hub-week-num">Week 1</span><div><div class="hub-week-title">GitHub Copilot: From Installed to Actually Useful</div><p class="hub-week-desc">Copilot configuration, custom instructions, skills and the three extensions that make the real difference — but almost nobody knows about.</p></div></div>
@@ -125,7 +125,7 @@ article.prose { max-width: 100% !important; padding: 0 !important; }
 <div class="hub-pillars">
 <div class="hub-pillar"><div class="hub-pillar-num">01</div><div class="hub-pillar-title">Deep-Dive Guides</div><p class="hub-pillar-text">Every week a long, technical article with concrete setups, prompt libraries and pro tips — tailored specifically to Polarion development. No filler theory.</p></div>
 <div class="hub-pillar"><div class="hub-pillar-num">02</div><div class="hub-pillar-title">Pull Principle: Real Tickets</div><p class="hub-pillar-text">We don't solve made-up examples. In live coaching you bring your actual Polarion ticket — and we work through it live together. That's the core of this programme.</p></div>
-<div class="hub-pillar"><div class="hub-pillar-num">03</div><div class="hub-pillar-title">Measurable Progress</div><p class="hub-pillar-text">Baseline survey at the start, 7-minute audit at the end. You see in black and white whether and how your workflow changed over 6 weeks.</p></div>
+<div class="hub-pillar"><div class="hub-pillar-num">03</div><div class="hub-pillar-title">Measurable Progress</div><p class="hub-pillar-text">Baseline survey at the start, 7-minute audit at the end. You see in black and white whether and how your workflow actually changed.</p></div>
 </div>
 </div>
 
@@ -135,7 +135,7 @@ article.prose { max-width: 100% !important; padding: 0 !important; }
 <h2 class="hub-section-title">Access &amp; Pricing</h2>
 <p class="hub-section-sub">All materials are available on demand — no fixed start date, instant access after purchase. Live coaching rounds available on request.</p>
 <div class="hub-pricing">
-<div class="hub-plan featured"><div class="hub-plan-badge">Recommended</div><div class="hub-plan-label">Materials Access</div><div class="hub-plan-price">€149 <small>one-time</small></div><p class="hub-plan-desc">All 6 weeks of deep-dive content, prompt libraries and checklists — yours to keep permanently.</p><ul class="hub-features"><li>All 6 weeks of coaching content</li><li>Setup guides: VS Code, Copilot, Docker</li><li>Unit &amp; UI test automation with AI</li><li>MCP integration for Polarion</li><li>Context &amp; token efficiency guide</li><li>Baseline survey + final audit</li><li>Permanent access including future updates</li></ul><a href="mailto:consulting@boesger.com?subject=AI Hub – Materials Access (€149)" class="btn-primary btn-full">Get Access Now</a></div>
+<div class="hub-plan featured"><div class="hub-plan-badge">Recommended</div><div class="hub-plan-label">Materials Access</div><div class="hub-plan-price">€149 <small>one-time</small></div><p class="hub-plan-desc">All coaching modules — deep-dive content, prompt libraries and checklists — yours to keep permanently.</p><ul class="hub-features"><li>All coaching modules</li><li>Setup guides: VS Code, Copilot, Docker</li><li>Unit &amp; UI test automation with AI</li><li>MCP integration for Polarion</li><li>Context &amp; token efficiency guide</li><li>Baseline survey + final audit</li><li>Permanent access including future updates</li></ul><a href="mailto:consulting@boesger.com?subject=AI Hub – Materials Access (€149)" class="btn-primary btn-full">Get Access Now</a></div>
 <div class="hub-plan"><div class="hub-plan-label">Teams &amp; Companies</div><div class="hub-plan-price" style="font-size:1.6rem;">On Request</div><p class="hub-plan-desc">For teams of 3 or more — including individual live coaching sessions and a team audit.</p><ul class="hub-features"><li>Everything in Materials Access (per seat)</li><li>Live coaching sessions for your team</li><li>Real team tickets solved live</li><li>Group audit: where does the team stand?</li><li>Onboarding support</li><li>Flexible scheduling</li></ul><a href="mailto:consulting@boesger.com?subject=AI Hub – Team Inquiry" class="btn-outline btn-full">Get in Touch</a></div>
 </div>
 </div>
