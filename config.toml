@@ -130,16 +130,6 @@ title = "Bösger Digital"
 #   status      – optional badge text, e.g. "Coming soon", "In development"
 
 [[params.homepage.projects]]
-  name = "AI Enablement Hub"
-  tagline = "AI coaching that empowers developers, users & teams to truly leverage AI"
-  description = "A growing coaching program — built on real-world delivery, fully applicable beyond Polarion. GitHub Copilot, VS Code, MCP and AI-powered testing. Individual modules available on demand, from €149."
-  image = "/images/education.webp"
-  link = "/ai-hub"
-  linkLabel = "View the Hub"
-  tags = ["AI Coaching", "GitHub Copilot", "AI Enablement"]
-  status = "Growing"
-
-[[params.homepage.projects]]
   name = "avaCopilot"
   tagline = "AI Copilot bringing GenAI capabilities into Polarion ALM"
   description = "An AI assistant for Polarion that turns repetitive ALM work into conversational, automated workflows – aligned with my mission to bring less manual work and more AI into Polarion."
@@ -162,8 +152,8 @@ title = "Bösger Digital"
   tagline = "AI coaching that empowers developers, users & teams to truly leverage AI"
   description = "A growing AI coaching program built right into my Polarion blog – created hand in hand with customers and continuously expanded. The mission: share knowledge openly and enable developers, users, and everyone in between to use AI fully and meaningfully in their daily work."
   image = "/images/education.png"
-  link = "https://polarion.boesger.com/tag/ai-enablement-hub/"
-  linkLabel = "Explore the Hub"
+  link = "/ai-hub"
+  linkLabel = "View the Hub"
   tags = ["AI Coaching", "Enablement", "Polarion", "Knowledge Sharing"]
   status = "Growing"
 
