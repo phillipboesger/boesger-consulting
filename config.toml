@@ -131,13 +131,13 @@ title = "Bösger Digital"
 
 [[params.homepage.projects]]
   name = "AI Enablement Hub"
-  tagline = "GitHub Copilot — finally used right"
-  description = "Structured AI coaching for developers who want to use AI as a real working tool — deep focus on Polarion, fully transferable. GitHub Copilot, VS Code, MCP and AI-powered testing. On demand, from €149."
+  tagline = "AI coaching that empowers developers, users & teams to truly leverage AI"
+  description = "A growing coaching program — built on real-world delivery, fully applicable beyond Polarion. GitHub Copilot, VS Code, MCP and AI-powered testing. Individual modules available on demand, from €149."
   image = "/images/education.webp"
   link = "/ai-hub"
   linkLabel = "View the Hub"
-  tags = ["AI Coaching", "GitHub Copilot", "Polarion"]
-  status = "On Demand"
+  tags = ["AI Coaching", "GitHub Copilot", "AI Enablement"]
+  status = "Growing"
 
 [[params.homepage.projects]]
   name = "avaCopilot"
