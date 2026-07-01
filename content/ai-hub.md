@@ -51,14 +51,14 @@ article.prose { max-width: 100% !important; padding: 0 !important; }
 .hub-pillar-title { font-size: 1rem; font-weight: 700; color: var(--text); margin: 0 0 0.5rem; }
 .hub-pillar-text { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin: 0; }
 .hub-pricing { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
-.hub-plan { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; position: relative; transition: all 0.3s; }
+.hub-plan { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; position: relative; transition: all 0.3s; display: flex; flex-direction: column; }
 .hub-plan.featured { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent-dim), 0 8px 32px var(--accent-dim); }
 .hub-plan-badge { position: absolute; top: -0.85rem; left: 50%; transform: translateX(-50%); background: var(--accent); color: #fff; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.25rem 1rem; border-radius: 2rem; white-space: nowrap; }
 .hub-plan-label { font-size: 0.82rem; font-weight: 700; color: var(--text-muted); margin: 0 0 0.5rem; text-transform: uppercase; letter-spacing: 0.05em; }
 .hub-plan-price { font-size: 2.4rem; font-weight: 800; color: var(--text); line-height: 1; margin: 0 0 0.25rem; }
 .hub-plan-price small { font-size: 1rem; font-weight: 400; color: var(--text-muted); }
 .hub-plan-desc { font-size: 0.88rem; color: var(--text-muted); margin: 0 0 1.5rem; line-height: 1.5; }
-.hub-features { list-style: none; padding: 0; margin: 0 0 1.75rem; display: flex; flex-direction: column; gap: 0.55rem; }
+.hub-features { list-style: none; padding: 0; margin: 0 0 1.75rem; display: flex; flex-direction: column; gap: 0.55rem; flex: 1; }
 .hub-features li { font-size: 0.9rem; color: var(--text); display: flex; gap: 0.6rem; align-items: flex-start; }
 .hub-features li::before { content: "✓"; color: var(--accent); font-weight: 800; flex-shrink: 0; }
 .hub-final-cta { text-align: center; padding: 3.5rem 1.5rem; background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin: 2.5rem 0 0; }
@@ -71,8 +71,6 @@ article.prose { max-width: 100% !important; padding: 0 !important; }
   .hub-section { padding: 2rem 1rem; }
   .hub-week { grid-template-columns: 1fr; }
   .hub-plan-price { font-size: 2rem; }
-  .hub-pricing { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding-bottom: 1.25rem; }
-  .hub-pricing > .hub-plan { min-width: 82vw; flex-shrink: 0; scroll-snap-align: start; }
   .hub-pillars { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding-bottom: 1rem; }
   .hub-pillars > .hub-pillar { min-width: 78vw; flex-shrink: 0; scroll-snap-align: start; }
 }
@@ -82,7 +80,7 @@ article.prose { max-width: 100% !important; padding: 0 !important; }
 <div class="hub-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg> AI Enablement Hub · On Demand</div>
 <h1 class="hub-h1">GitHub Copilot.<br><span>Finally used right.</span></h1>
 <p class="hub-sub">Structured AI coaching for developers who want to work smarter — with a deep focus on Polarion, and fully applicable beyond. From initial setup to real test automation with AI. Proven in production, now available on demand.</p>
-<div class="hub-cta-row"><a href="mailto:consulting@boesger.com?subject=AI%20Enablement%20Hub%20%E2%80%93%20Access" class="btn-primary">Get Access — from €149</a> <a href="mailto:consulting@boesger.com?subject=AI%20Enablement%20Hub%20%E2%80%93%20Team%20Inquiry" class="btn-outline">Request Team Package</a></div>
+<div class="hub-cta-row"><a href="mailto:consulting@boesger.com?subject=AI%20Enablement%20Hub%20%E2%80%93%20Access&body=Hi%20Phillip%2C%0A%0AI%27m%20interested%20in%20getting%20access%20to%20the%20AI%20Enablement%20Hub.%0A%0AA%20bit%20about%20me%3A%0A-%20Role%20%2F%20team%3A%20%0A-%20Current%20AI%20tool%20usage%3A%20%0A-%20What%20I%20want%20to%20achieve%3A%20%0A%0ABest%20regards" class="btn-primary">Get Access — from €149</a> <a href="mailto:consulting@boesger.com?subject=AI%20Enablement%20Hub%20%E2%80%93%20Team%20Inquiry&body=Hi%20Phillip%2C%0A%0AWe%27re%20interested%20in%20the%20AI%20Enablement%20Hub%20for%20our%20team.%0A%0AAbout%20us%3A%0A-%20Company%20%2F%20team%3A%20%0A-%20Team%20size%3A%20%0A-%20Current%20AI%20tool%20usage%3A%20%0A-%20Main%20goal%3A%20%0A%0ABest%20regards" class="btn-outline">Request Team Package</a></div>
 </div>
 
 <div class="hub-section">
@@ -118,6 +116,7 @@ article.prose { max-width: 100% !important; padding: 0 !important; }
 <div class="hub-week"><span class="hub-week-num">Week 4</span><div><div class="hub-week-title">MCP — Copilot Gets Direct Access to Polarion</div><p class="hub-week-desc">No more copy-pasting between Polarion and VS Code. The Polarion MCP Server connects Copilot directly to your backlog — read the ticket, understand the context, write the code. All without switching tools.</p></div></div>
 <div class="hub-week"><span class="hub-week-num">Week 5</span><div><div class="hub-week-title">Context &amp; Token Efficiency + Final Audit</div><p class="hub-week-desc">Copilot sessions grow large and expensive. Learn how to achieve more with less context — cacheable prompts, project knowledge, session management. Plus the anonymous 7-minute final audit: did your workflow actually change?</p></div></div>
 </div>
+<p style="margin-top:1rem;font-size:0.85rem;color:var(--text-muted);line-height:1.6;"><em>The structure above reflects a proven delivery from a real customer engagement. The Hub materials cover more ground and are continuously extended — additional modules are added as the knowledge base grows.</em></p>
 </div>
 
 <hr class="hub-divider">
@@ -139,13 +138,13 @@ article.prose { max-width: 100% !important; padding: 0 !important; }
 <h2 class="hub-section-title">Access &amp; Pricing</h2>
 <p class="hub-section-sub">All materials are available on demand — no fixed start date, instant access after purchase. Live coaching rounds available on request.</p>
 <div class="hub-pricing">
-<div class="hub-plan featured"><div class="hub-plan-badge">Recommended</div><div class="hub-plan-label">Materials Access</div><div class="hub-plan-price">€149 <small>one-time</small></div><p class="hub-plan-desc">All coaching modules — deep-dive content, prompt libraries and checklists — yours to keep permanently.</p><ul class="hub-features"><li>All coaching modules</li><li>Setup guides: VS Code, Copilot, Docker</li><li>Unit &amp; UI test automation with AI</li><li>MCP integration for Polarion</li><li>Context &amp; token efficiency guide</li><li>Baseline survey + final audit</li><li>Permanent access including future updates</li></ul><a href="mailto:consulting@boesger.com?subject=AI%20Hub%20%E2%80%93%20Materials%20Access%20%28%E2%82%AC149%29" class="btn-primary btn-full">Get Access Now</a></div>
-<div class="hub-plan"><div class="hub-plan-label">Teams &amp; Companies</div><div class="hub-plan-price" style="font-size:1.6rem;">On Request</div><p class="hub-plan-desc">For teams of 3 or more — including individual live coaching sessions and a team audit.</p><ul class="hub-features"><li>Everything in Materials Access (per seat)</li><li>Live coaching sessions for your team</li><li>Real team tickets solved live</li><li>Group audit: where does the team stand?</li><li>Onboarding support</li><li>Flexible scheduling</li></ul><a href="mailto:consulting@boesger.com?subject=AI%20Hub%20%E2%80%93%20Team%20Inquiry" class="btn-outline btn-full">Get in Touch</a></div>
+<div class="hub-plan featured"><div class="hub-plan-badge">Recommended</div><div class="hub-plan-label">Materials Access</div><div class="hub-plan-price">€149 <small>one-time</small></div><p class="hub-plan-desc">All coaching modules — deep-dive content, prompt libraries and checklists — yours to keep permanently.</p><ul class="hub-features"><li>All coaching modules</li><li>Setup guides: VS Code, Copilot, Docker</li><li>Unit &amp; UI test automation with AI</li><li>MCP integration for Polarion</li><li>Context &amp; token efficiency guide</li><li>Baseline survey + final audit</li><li>Permanent access including future updates</li></ul><a href="mailto:consulting@boesger.com?subject=AI%20Hub%20%E2%80%93%20Materials%20Access%20%28%E2%82%AC149%29&body=Hi%20Phillip%2C%0A%0AI%27d%20like%20to%20get%20access%20to%20the%20AI%20Enablement%20Hub%20materials%20%28%E2%82%AC149%20one-time%29.%0A%0AA%20bit%20about%20me%3A%0A-%20Role%20%2F%20team%3A%20%0A-%20Current%20AI%20tool%20usage%3A%20%0A-%20What%20I%20want%20to%20achieve%3A%20%0A%0ABest%20regards" class="btn-primary btn-full">Get Access Now</a></div>
+<div class="hub-plan"><div class="hub-plan-label">Teams &amp; Companies</div><div class="hub-plan-price" style="font-size:1.6rem;">On Request</div><p class="hub-plan-desc">For teams of 3 or more — including individual live coaching sessions and a team audit.</p><ul class="hub-features"><li>Everything in Materials Access (per seat)</li><li>Live coaching sessions for your team</li><li>Real team tickets solved live</li><li>Group audit: where does the team stand?</li><li>Onboarding support</li><li>Flexible scheduling</li></ul><a href="mailto:consulting@boesger.com?subject=AI%20Hub%20%E2%80%93%20Team%20Inquiry&body=Hi%20Phillip%2C%0A%0AWe%27re%20interested%20in%20the%20AI%20Enablement%20Hub%20for%20our%20team.%0A%0AAbout%20us%3A%0A-%20Company%20%2F%20team%3A%20%0A-%20Team%20size%3A%20%0A-%20Current%20AI%20tool%20usage%3A%20%0A-%20Main%20goal%3A%20%0A%0ABest%20regards" class="btn-outline btn-full">Get in Touch</a></div>
 </div>
 </div>
 
 <div class="hub-final-cta">
 <h2>Ready to actually use AI?</h2>
 <p>Write to me directly — I respond personally and help you find the right entry point.</p>
-<div class="hub-cta-row"><a href="mailto:consulting@boesger.com?subject=AI%20Enablement%20Hub%20%E2%80%93%20Access" class="btn-primary">Get Access — from €149</a> <a href="mailto:consulting@boesger.com?subject=AI%20Enablement%20Hub%20%E2%80%93%20Question" class="btn-outline">Ask a Question</a></div>
+<div class="hub-cta-row"><a href="mailto:consulting@boesger.com?subject=AI%20Enablement%20Hub%20%E2%80%93%20Access&body=Hi%20Phillip%2C%0A%0AI%27m%20interested%20in%20getting%20access%20to%20the%20AI%20Enablement%20Hub.%0A%0AA%20bit%20about%20me%3A%0A-%20Role%20%2F%20team%3A%20%0A-%20Current%20AI%20tool%20usage%3A%20%0A-%20What%20I%20want%20to%20achieve%3A%20%0A%0ABest%20regards" class="btn-primary">Get Access — from €149</a> <a href="mailto:consulting@boesger.com?subject=AI%20Enablement%20Hub%20%E2%80%93%20Question&body=Hi%20Phillip%2C%0A%0AI%20have%20a%20question%20about%20the%20AI%20Enablement%20Hub%3A%0A%0A%0A%0ABest%20regards" class="btn-outline">Ask a Question</a></div>
 </div>
