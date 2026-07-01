@@ -71,6 +71,10 @@ article.prose { max-width: 100% !important; padding: 0 !important; }
   .hub-section { padding: 2rem 1rem; }
   .hub-week { grid-template-columns: 1fr; }
   .hub-plan-price { font-size: 2rem; }
+  .hub-pricing { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding-bottom: 1.25rem; }
+  .hub-pricing > .hub-plan { min-width: 82vw; flex-shrink: 0; scroll-snap-align: start; }
+  .hub-pillars { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding-bottom: 1rem; }
+  .hub-pillars > .hub-pillar { min-width: 78vw; flex-shrink: 0; scroll-snap-align: start; }
 }
 </style>
 
@@ -105,15 +109,14 @@ article.prose { max-width: 100% !important; padding: 0 !important; }
 
 <div class="hub-section">
 <h2 class="hub-section-title">The Programme</h2>
-<p class="hub-section-sub">Each module covers one concrete topic. No theory overhead — every piece of content is immediately applicable in Polarion projects. Scope is tailored to your team.</p>
+<p class="hub-section-sub">Each module covers one concrete topic — proven in real customer delivery. No theory overhead, immediately applicable. Scope and sequence are individually adjustable.</p>
 <div class="hub-curriculum">
 <div class="hub-week"><span class="hub-week-num">Session 0</span><div><div class="hub-week-title">Foundation Setup — VS Code, GitHub Copilot &amp; Docker</div><p class="hub-week-desc">A unified development environment for everyone. Before the first ticket is touched, every machine runs on the same baseline. No more "it works on my machine".</p></div></div>
 <div class="hub-week"><span class="hub-week-num">Week 1</span><div><div class="hub-week-title">GitHub Copilot: From Installed to Actually Useful</div><p class="hub-week-desc">Copilot configuration, custom instructions, skills and the three extensions that make the real difference — but almost nobody knows about.</p></div></div>
 <div class="hub-week"><span class="hub-week-num">Week 2</span><div><div class="hub-week-title">Stop Debugging. Start Reviewing.</div><p class="hub-week-desc">Two workflow shifts, one mindset change: stop chasing bugs alone and let Copilot take the first step — then learn what to do with the result.</p></div></div>
-<div class="hub-week"><span class="hub-week-num">Week 3</span><div><div class="hub-week-title">Pause, Catch-up &amp; Open Questions</div><p class="hub-week-desc">No new content — by design. Optimise your setup, bring your questions, and consolidate the insights from the first two weeks.</p></div></div>
-<div class="hub-week"><span class="hub-week-num">Week 4</span><div><div class="hub-week-title">800 Unit &amp; UI Tests — AI Writes Your Test Suite</div><p class="hub-week-desc">500 methods, zero tests — solved with a single Copilot skill. Copilot generates and maintains 800 unit tests automatically, no running Polarion server required. Plus: UI tests with Playwright MCP, giving Copilot eyes on your Polarion interface for the first time.</p></div></div>
-<div class="hub-week"><span class="hub-week-num">Week 5</span><div><div class="hub-week-title">MCP — Copilot Gets Direct Access to Polarion</div><p class="hub-week-desc">No more copy-pasting between Polarion and VS Code. The Polarion MCP Server connects Copilot directly to your backlog — read the ticket, understand the context, write the code. All without switching tools.</p></div></div>
-<div class="hub-week"><span class="hub-week-num">Week 6</span><div><div class="hub-week-title">Context &amp; Token Efficiency + Final Audit</div><p class="hub-week-desc">Copilot sessions grow large and expensive. Learn how to achieve more with less context — cacheable prompts, project knowledge, session management. Plus the anonymous 7-minute final audit: did your workflow actually change?</p></div></div>
+<div class="hub-week"><span class="hub-week-num">Week 3</span><div><div class="hub-week-title">800 Unit &amp; UI Tests — AI Writes Your Test Suite</div><p class="hub-week-desc">500 methods, zero tests — solved with a single Copilot skill. Copilot generates and maintains 800 unit tests automatically, no running Polarion server required. Plus: UI tests with Playwright MCP, giving Copilot eyes on your Polarion interface for the first time.</p></div></div>
+<div class="hub-week"><span class="hub-week-num">Week 4</span><div><div class="hub-week-title">MCP — Copilot Gets Direct Access to Polarion</div><p class="hub-week-desc">No more copy-pasting between Polarion and VS Code. The Polarion MCP Server connects Copilot directly to your backlog — read the ticket, understand the context, write the code. All without switching tools.</p></div></div>
+<div class="hub-week"><span class="hub-week-num">Week 5</span><div><div class="hub-week-title">Context &amp; Token Efficiency + Final Audit</div><p class="hub-week-desc">Copilot sessions grow large and expensive. Learn how to achieve more with less context — cacheable prompts, project knowledge, session management. Plus the anonymous 7-minute final audit: did your workflow actually change?</p></div></div>
 </div>
 </div>
 
@@ -121,11 +124,12 @@ article.prose { max-width: 100% !important; padding: 0 !important; }
 
 <div class="hub-section">
 <h2 class="hub-section-title">How the Hub Works</h2>
-<p class="hub-section-sub">Three elements set this apart from a typical online course.</p>
+<p class="hub-section-sub">What sets this apart from a typical online course — and why the materials actually hold up.</p>
 <div class="hub-pillars">
-<div class="hub-pillar"><div class="hub-pillar-num">01</div><div class="hub-pillar-title">Deep-Dive Guides</div><p class="hub-pillar-text">Every week a long, technical article with concrete setups, prompt libraries and pro tips — tailored specifically to Polarion development. No filler theory.</p></div>
-<div class="hub-pillar"><div class="hub-pillar-num">02</div><div class="hub-pillar-title">Pull Principle: Real Tickets</div><p class="hub-pillar-text">We don't solve made-up examples. In live coaching you bring your actual Polarion ticket — and we work through it live together. That's the core of this programme.</p></div>
+<div class="hub-pillar"><div class="hub-pillar-num">01</div><div class="hub-pillar-title">Proven in Real Delivery</div><p class="hub-pillar-text">Every guide was developed on real customer projects — not in theory. Content is continuously expanded as my daily work generates new insights. Prompt libraries, setup flows and edge cases from actual Polarion delivery.</p></div>
+<div class="hub-pillar"><div class="hub-pillar-num">02</div><div class="hub-pillar-title">Pull Principle: Real Tickets</div><p class="hub-pillar-text">We don't solve made-up examples. In live coaching you bring your actual ticket — and we work through it live together. That's the core of this programme.</p></div>
 <div class="hub-pillar"><div class="hub-pillar-num">03</div><div class="hub-pillar-title">Measurable Progress</div><p class="hub-pillar-text">Baseline survey at the start, 7-minute audit at the end. You see in black and white whether and how your workflow actually changed.</p></div>
+<div class="hub-pillar"><div class="hub-pillar-num">04</div><div class="hub-pillar-title">Individual Coaching &amp; Custom Sessions</div><p class="hub-pillar-text">Need more than the materials? I offer individual sessions tailored to your specific setup — and can create custom content on request. My knowledge grows daily; what's useful gets added to the Hub.</p></div>
 </div>
 </div>
 
