@@ -1,5 +1,5 @@
 ---
-title: "AI-Enablement Hub"
+title: "AI Enablement Hub"
 description: "AI coaching for Polarion developers – GitHub Copilot, VS Code, MCP and AI-powered testing. Available on demand."
 ---
 
@@ -75,10 +75,10 @@ article.prose { max-width: 100% !important; padding: 0 !important; }
 </style>
 
 <div class="hub-hero">
-<div class="hub-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg> AI-Enablement Hub · On Demand</div>
+<div class="hub-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg> AI Enablement Hub · On Demand</div>
 <h1 class="hub-h1">GitHub Copilot.<br><span>Finally used right.</span></h1>
 <p class="hub-sub">Structured AI coaching for Polarion developers — from initial setup to real test automation with AI. Proven in production, now available on demand.</p>
-<div class="hub-cta-row"><a href="mailto:consulting@boesger.com?subject=AI-Enablement Hub – Access" class="btn-primary">Get Access — from €149</a> <a href="mailto:consulting@boesger.com?subject=AI-Enablement Hub – Team Inquiry" class="btn-outline">Request Team Package</a></div>
+<div class="hub-cta-row"><a href="mailto:consulting@boesger.com?subject=AI%20Enablement%20Hub%20%E2%80%93%20Access" class="btn-primary">Get Access — from €149</a> <a href="mailto:consulting@boesger.com?subject=AI%20Enablement%20Hub%20%E2%80%93%20Team%20Inquiry" class="btn-outline">Request Team Package</a></div>
 </div>
 
 <div class="hub-section">
@@ -135,13 +135,13 @@ article.prose { max-width: 100% !important; padding: 0 !important; }
 <h2 class="hub-section-title">Access &amp; Pricing</h2>
 <p class="hub-section-sub">All materials are available on demand — no fixed start date, instant access after purchase. Live coaching rounds available on request.</p>
 <div class="hub-pricing">
-<div class="hub-plan featured"><div class="hub-plan-badge">Recommended</div><div class="hub-plan-label">Materials Access</div><div class="hub-plan-price">€149 <small>one-time</small></div><p class="hub-plan-desc">All coaching modules — deep-dive content, prompt libraries and checklists — yours to keep permanently.</p><ul class="hub-features"><li>All coaching modules</li><li>Setup guides: VS Code, Copilot, Docker</li><li>Unit &amp; UI test automation with AI</li><li>MCP integration for Polarion</li><li>Context &amp; token efficiency guide</li><li>Baseline survey + final audit</li><li>Permanent access including future updates</li></ul><a href="mailto:consulting@boesger.com?subject=AI Hub – Materials Access (€149)" class="btn-primary btn-full">Get Access Now</a></div>
-<div class="hub-plan"><div class="hub-plan-label">Teams &amp; Companies</div><div class="hub-plan-price" style="font-size:1.6rem;">On Request</div><p class="hub-plan-desc">For teams of 3 or more — including individual live coaching sessions and a team audit.</p><ul class="hub-features"><li>Everything in Materials Access (per seat)</li><li>Live coaching sessions for your team</li><li>Real team tickets solved live</li><li>Group audit: where does the team stand?</li><li>Onboarding support</li><li>Flexible scheduling</li></ul><a href="mailto:consulting@boesger.com?subject=AI Hub – Team Inquiry" class="btn-outline btn-full">Get in Touch</a></div>
+<div class="hub-plan featured"><div class="hub-plan-badge">Recommended</div><div class="hub-plan-label">Materials Access</div><div class="hub-plan-price">€149 <small>one-time</small></div><p class="hub-plan-desc">All coaching modules — deep-dive content, prompt libraries and checklists — yours to keep permanently.</p><ul class="hub-features"><li>All coaching modules</li><li>Setup guides: VS Code, Copilot, Docker</li><li>Unit &amp; UI test automation with AI</li><li>MCP integration for Polarion</li><li>Context &amp; token efficiency guide</li><li>Baseline survey + final audit</li><li>Permanent access including future updates</li></ul><a href="mailto:consulting@boesger.com?subject=AI%20Hub%20%E2%80%93%20Materials%20Access%20%28%E2%82%AC149%29" class="btn-primary btn-full">Get Access Now</a></div>
+<div class="hub-plan"><div class="hub-plan-label">Teams &amp; Companies</div><div class="hub-plan-price" style="font-size:1.6rem;">On Request</div><p class="hub-plan-desc">For teams of 3 or more — including individual live coaching sessions and a team audit.</p><ul class="hub-features"><li>Everything in Materials Access (per seat)</li><li>Live coaching sessions for your team</li><li>Real team tickets solved live</li><li>Group audit: where does the team stand?</li><li>Onboarding support</li><li>Flexible scheduling</li></ul><a href="mailto:consulting@boesger.com?subject=AI%20Hub%20%E2%80%93%20Team%20Inquiry" class="btn-outline btn-full">Get in Touch</a></div>
 </div>
 </div>
 
 <div class="hub-final-cta">
 <h2>Ready to actually use AI?</h2>
 <p>Write to me directly — I respond personally and help you find the right entry point.</p>
-<div class="hub-cta-row"><a href="mailto:consulting@boesger.com?subject=AI-Enablement Hub – Access" class="btn-primary">Get Access — from €149</a> <a href="mailto:consulting@boesger.com?subject=AI-Enablement Hub – Question" class="btn-outline">Ask a Question</a></div>
+<div class="hub-cta-row"><a href="mailto:consulting@boesger.com?subject=AI%20Enablement%20Hub%20%E2%80%93%20Access" class="btn-primary">Get Access — from €149</a> <a href="mailto:consulting@boesger.com?subject=AI%20Enablement%20Hub%20%E2%80%93%20Question" class="btn-outline">Ask a Question</a></div>
 </div>
