@@ -145,7 +145,7 @@ title = "Bösger Digital"
   description = "An AI assistant for Polarion that turns repetitive ALM work into conversational, automated workflows – aligned with my mission to bring less manual work and more AI into Polarion."
   image = "/images/chatGPT.png"
   tags = ["Polarion", "GenAI", "Automation"]
-  status = "In development"
+  status = "Available"
 
 [[params.homepage.projects]]
   name = "Sharing Knowledge with the Community"
@@ -158,13 +158,23 @@ title = "Bösger Digital"
   status = "Active"
 
 [[params.homepage.projects]]
+  name = "AI Enablement Hub for Polarion"
+  tagline = "AI coaching that empowers developers, users & teams to truly leverage AI"
+  description = "A growing AI coaching program built right into my Polarion blog – created hand in hand with customers and continuously expanded. The mission: share knowledge openly and enable developers, users, and everyone in between to use AI fully and meaningfully in their daily work."
+  image = "/images/education.png"
+  link = "https://polarion.boesger.com/tag/ai-enablement-hub/"
+  linkLabel = "Explore the Hub"
+  tags = ["AI Coaching", "Enablement", "Polarion", "Knowledge Sharing"]
+  status = "Growing"
+
+[[params.homepage.projects]]
   name = "Polarion Code Editor"
   tagline = "VS Code-style file editor built directly into the Polarion Admin panel"
   description = "Stop checking out. Edit Velocity macros, JSON configs, and XML files directly inside Polarion – no SVN client needed. Powered by the Monaco Engine (the same engine behind VS Code) with syntax highlighting, auto-formatting, and persistent sessions."
   image = "/images/polarion.png"
   link = "https://polarion.code.editor.boesger.com"
   linkLabel = "View Product Page"
-  tags = ["Polarion", "Monaco Editor", "Open Source"]
+  tags = ["Polarion", "Monaco Editor", "Open Source", "Community Extension"]
   status = "Free Download"
 
 [[params.homepage.projects]]
@@ -174,7 +184,7 @@ title = "Bösger Digital"
   image = "/images/CI_CD.png"
   link = "https://polarion-docker.boesger.com"
   linkLabel = "View Product Page"
-  tags = ["Docker", "Polarion", "Open Source"]
+  tags = ["Docker", "Polarion", "Open Source", "Community Extension"]
   status = "Open Source"
 
 [[params.homepage.projects]]
@@ -184,7 +194,7 @@ title = "Bösger Digital"
   image = "/images/n8n.png"
   link = "https://polarion-mcp.boesger.com"
   linkLabel = "View Product Page"
-  tags = ["MCP", "GitHub Copilot", "Open Source"]
+  tags = ["MCP", "AI Integration", "Open Source"]
   status = "Open Source"
 
 [params.homepage.social]

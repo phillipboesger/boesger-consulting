@@ -1,32 +1,49 @@
 ---
 title: "Working With Me"
-description: "What to expect when working with Bösger Digital – availability, remote-first collaboration and values."
+description: "Two ways to engage with Bösger Digital — custom Polarion development and hands-on enablement. Remote-first, results-focused."
 ---
 
 <style>
-  .collab-flex {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    margin-bottom: 1.5rem;
-    flex-wrap: wrap;
+  .wwm-subtitle {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #2563eb;
+    margin: -0.5rem 0 2rem;
   }
-  .collab-box {
+  .engage-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 0 0 2.5rem;
+  }
+  /* From tablet up, show all three cards in one row. The grid breaks out of
+     the prose text column (which caps around 64rem) and centres on the
+     viewport so each card keeps a comfortable width. Safe because no
+     ancestor clips overflow, and the article is mx-auto centred. */
+  @media (min-width: 768px) {
+    .engage-grid {
+      grid-template-columns: repeat(3, 1fr);
+      width: min(72rem, calc(100vw - 3rem));
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  /* Selectors are scoped under .engage-grid so they out-specify the
+     surrounding `.prose` typography styles (spacing, list markers, etc.). */
+  .engage-grid .engage-card {
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 1.25rem;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
+    padding: 1.6rem 1.6rem 1.75rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    flex: 1 1 280px;
-    min-width: 260px;
-    transform: translateY(0);
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     position: relative;
     overflow: hidden;
     isolation: isolate;
+    display: flex;
+    flex-direction: column;
   }
-  .collab-box::before {
+  .engage-grid .engage-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -37,172 +54,233 @@ description: "What to expect when working with Bösger Digital – availability,
     transition: left 0.6s ease;
     pointer-events: none;
   }
-  .collab-box:hover::before {
+  .engage-grid .engage-card:hover::before {
     left: 100%;
   }
-  .collab-box:hover {
+  .engage-grid .engage-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 16px 48px rgba(37, 99, 235, 0.15);
-    background: rgba(255, 255, 255, 0.95);
     border-color: rgba(37, 99, 235, 0.3);
   }
-  .collab-icon {
-    font-size: 2.2rem;
-    margin-bottom: 0.6rem;
-    display: block;
-    position: relative;
-    z-index: 1;
-    transition: transform 0.3s ease;
-  }
-  .collab-box:hover .collab-icon {
-    transform: translateY(-4px);
-  }
-  .collab-title {
-    font-size: 1.12rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    line-height: 1.3;
-  }
-  .values-row {
+  .engage-grid .engage-head {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    margin: 1.25rem 0;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 0 0 1rem;
   }
-  .value-chip {
+  .engage-grid .engage-icon {
+    flex-shrink: 0;
+    width: 2.75rem;
+    height: 2.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8rem;
+    background: rgba(37, 99, 235, 0.1);
+    border: 1px solid rgba(37, 99, 235, 0.25);
+    color: #2563eb;
+  }
+  .engage-grid .engage-icon svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    display: block;
+  }
+  .engage-grid .engage-tag {
     background: rgba(37, 99, 235, 0.1);
     border: 1px solid rgba(37, 99, 235, 0.3);
     color: #2563eb;
     border-radius: 2rem;
-    padding: 0.4rem 1.1rem;
-    font-weight: 600;
-    font-size: 0.98rem;
-    transition: all 0.2s ease;
+    padding: 0.28rem 0.9rem;
+    font-weight: 700;
+    font-size: 0.74rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
   }
-  .value-chip:hover {
-    background: rgba(37, 99, 235, 0.18);
+  .engage-grid .engage-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 0.5rem;
+  }
+  .engage-grid .engage-lead {
+    font-size: 0.96rem;
+    line-height: 1.55;
+    margin: 0 0 0.9rem;
+    color: #4b5563;
+  }
+  .engage-grid .engage-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+  .engage-grid .engage-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    color: #374151;
+  }
+  .engage-grid .engage-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* Reset the gray circle the `.prose ul>li::before` rule otherwise
+       leaves behind (content/left/color are overridden, but background,
+       size and border-radius cascade per-property and must be cleared). */
+    width: auto;
+    height: auto;
+    background: none !important; /* theme's dark prose dot out-specifies this */
+    border-radius: 0;
+    color: #2563eb;
+    font-weight: 800;
+  }
+  .engage-grid .engage-bestfor {
+    margin: auto 0 0;
+    padding-top: 0.9rem;
+    border-top: 1px dashed rgba(37, 99, 235, 0.25);
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: #4b5563;
+  }
+  .engage-grid .engage-bestfor strong {
+    color: #2563eb;
+  }
+
+  .cta-panel {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(124, 58, 237, 0.08));
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    border-radius: 1.25rem;
+    padding: 1.75rem;
+    margin: 0 0 2rem;
+    text-align: center;
+  }
+  .cta-book {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #2563eb;
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 1.02rem;
+    padding: 0.85rem 1.6rem;
+    border-radius: 0.85rem;
+    text-decoration: none !important;
+    box-shadow: 0 10px 28px rgba(37, 99, 235, 0.28);
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .cta-book:hover {
+    background: #1d4ed8;
     transform: translateY(-2px);
+    box-shadow: 0 14px 36px rgba(37, 99, 235, 0.35);
   }
+  .cta-direct {
+    margin: 1.1rem 0 0;
+    font-size: 0.98rem;
+    color: #4b5563;
+  }
+
+  .wwm-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+  }
+  .wwm-table thead {
+    display: none;
+  }
+  .wwm-table td {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    vertical-align: top;
+    font-size: 0.95rem;
+  }
+  .wwm-table tr td:first-child {
+    width: 32%;
+    color: #2563eb;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .wwm-table tr:last-child td {
+    border-bottom: none;
+  }
+
   @media (prefers-color-scheme: dark) {
-    .collab-box {
+    .engage-grid .engage-card {
       background: rgba(17, 24, 39, 0.9);
       border-color: rgba(55, 65, 81, 0.5);
-      color: #f3f4f6;
     }
-    .collab-box:hover {
-      background: rgba(17, 24, 39, 0.95);
+    .engage-grid .engage-card:hover {
       border-color: rgba(96, 165, 250, 0.4);
-      box-shadow: 0 16px 48px rgba(96, 165, 250, 0.1);
+      box-shadow: 0 16px 48px rgba(96, 165, 250, 0.12);
     }
-    .value-chip {
+    .engage-grid .engage-icon {
+      background: rgba(96, 165, 250, 0.12);
+      border-color: rgba(96, 165, 250, 0.3);
+      color: #60a5fa;
+    }
+    .engage-grid .engage-tag {
       background: rgba(96, 165, 250, 0.12);
       border-color: rgba(96, 165, 250, 0.35);
       color: #60a5fa;
     }
-    .value-chip:hover {
-      background: rgba(96, 165, 250, 0.2);
+    .engage-grid .engage-lead,
+    .engage-grid .engage-bestfor {
+      color: #9ca3af;
+    }
+    .engage-grid .engage-list li {
+      color: #d1d5db;
+    }
+    .engage-grid .engage-list li::before,
+    .engage-grid .engage-bestfor strong {
+      color: #60a5fa;
+    }
+    .cta-panel {
+      background: linear-gradient(135deg, rgba(96, 165, 250, 0.1), rgba(167, 139, 250, 0.1));
+      border-color: rgba(96, 165, 250, 0.25);
+    }
+    .cta-direct {
+      color: #9ca3af;
+    }
+    .wwm-table td {
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+    .wwm-table tr td:first-child {
+      color: #60a5fa;
     }
   }
-  @media (max-width: 700px) {
-    .collab-flex {
-      flex-direction: column;
-      gap: 1.2rem;
-      margin: 0;
-      padding: 0;
+
+  @media (max-width: 640px) {
+    .wwm-table tr td:first-child {
+      white-space: normal;
     }
-    .collab-box {
-      padding: 1.2rem;
-      margin-bottom: 1rem;
-      min-width: unset;
-      flex: 1 1 auto;
-      width: 100%;
-      box-sizing: border-box;
-    }
-    .collab-title {
-      font-size: 1.05rem;
-    }
-    h1, h1#title, h1.title, h1:first-child {
-      font-size: 1.35rem !important;
-      padding: 0 1rem;
-    }
-    .cta-white {
-      font-size: 1.75rem !important;
-      padding: 0 1rem;
-    }
-    .cta-white a {
-      font-size: 2.25rem !important;
-    }
-  }
-  @media (max-width: 480px) {
-    .collab-box {
-      padding: 1rem;
-      margin-bottom: 0.8rem;
-      border-radius: 1rem;
-    }
-    .collab-title {
-      font-size: 1rem;
-    }
-    h1, h1#title, h1.title, h1:first-child {
-      font-size: 1.2rem !important;
-    }
-    .cta-white {
-      font-size: 1.5rem !important;
-    }
-    .cta-white a {
-      font-size: 1.8rem !important;
-    }
-  }
-  h1.title, h1#title, h1:first-child {
-    display: none !important;
-  }
-  .cta-white {
-    color: #fff !important;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
   }
 </style>
 
-Collaboration should be straightforward, reliable and built on trust. Here's what you can expect when we work together.
+<p class="wwm-subtitle">Three ways to engage — all remote-first, all results-focused.</p>
 
-<div class="collab-flex">
-  <div class="collab-box">
-    <span class="collab-icon">🗓️</span>
-    <div class="collab-title">Availability</div>
-    I work up to 30 hours per week. That scope allows me to go deep and deliver real results – without spreading thin across too many parallel commitments.
-  </div>
-  <div class="collab-box">
-    <span class="collab-icon">🌍</span>
-    <div class="collab-title">Remote-First by Design</div>
-    I work remotely from wherever I am in the world. That's not a limitation – it's how I do my best, most focused work. Whenever on-site presence makes sense, especially for workshops or project kickoffs, we can make it happen.
-  </div>
-  <div class="collab-box">
-    <span class="collab-icon">📡</span>
-    <div class="collab-title">Always Reachable</div>
-    No matter where I'm working from, communication and coordination are always possible. Regular syncs, async updates, structured handoffs – whatever rhythm works best for your team.
-  </div>
-  <div class="collab-box">
-    <span class="collab-icon">🔧</span>
-    <div class="collab-title">Adaptable by Nature</div>
-    Requirements shift. Priorities change. Unexpected things come up. That's normal in real engineering work. I don't need everything defined upfront – as long as we communicate openly, we can figure things out together.
-  </div>
+<div class="engage-grid"><div class="engage-card"><div class="engage-head"><span class="engage-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span><span class="engage-tag">Dev</span></div><h2 class="engage-title">Custom Polarion Development</h2><p class="engage-lead">You need a feature built. I take it from spec to production.</p><ul class="engage-list"><li>Custom Polarion extensions: Java, REST API, Velocity templates, workflow rules</li><li>CI/CD pipelines with automated release documentation</li><li>AI-assisted development — same quality, faster delivery</li><li>Full lifecycle: requirements, architecture, implementation, testing, deployment</li></ul><p class="engage-bestfor"><strong>Best for:</strong> Teams who know what they need and want a senior developer who delivers without hand-holding.</p></div><div class="engage-card"><div class="engage-head"><span class="engage-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span class="engage-tag">Enablement</span></div><h2 class="engage-title">Coaching &amp; AI Adoption</h2><p class="engage-lead">Your team has Polarion and isn't getting the ROI from it. I run hands-on assessments and coaching sprints that change that.</p><ul class="engage-list"><li>Workflow assessment: where is your team actually losing time in Polarion?</li><li>AI toolchain setup: practical integration of AI into daily Polarion work</li><li>Team coaching sprints: hands-on, not slide-deck-driven</li><li>Built on the same methodology behind avaCopilot</li></ul><p class="engage-bestfor"><strong>Best for:</strong> Teams or individuals who want to get more out of the tools they already have.</p></div><div class="engage-card"><div class="engage-head"><span class="engage-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span><span class="engage-tag">Beyond</span></div><h2 class="engage-title">AI Development &amp; Transformation</h2><p class="engage-lead">Not everything is a Polarion problem. I bring my full development stack and AI know-how to wherever you need support.</p><ul class="engage-list"><li>Full-stack &amp; AI development: web apps, automations, integrations, internal tools</li><li>Hands-on support through digital, ALM and AI transformations</li><li>Custom AI agents and workflow automation built around your processes</li><li>Senior engineering capacity, embedded in your team where the gaps are</li></ul><p class="engage-bestfor"><strong>Best for:</strong> Teams navigating change who need a versatile developer beyond the Polarion world.</p></div></div>
+
+## How to work together
+
+<div class="cta-panel"><a href="https://calendly.com/phillip-boesger/30min" target="_blank" rel="noopener noreferrer" class="cta-book">📅 Book a free 30-minute intro call</a><p class="cta-direct">📩 Or reach out directly: <a href="mailto:digital@boesger.com">digital@boesger.com</a> · <a href="https://www.linkedin.com/in/phillip-boesger-90691215a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p></div>
+
+## Working Style
+
+<div class="wwm-table">
+
+| | |
+|---|---|
+| **Availability** | Available now · Up to 30h/week |
+| **Location** | Remote · DACH · Up to 20% on-site for workshops/kickoffs |
+| **Communication** | Async-first, regular syncs on request |
+| **Languages** | German · English |
+
 </div>
 
-## My Values
+## Values
 
-These aren't buzzwords. They're the things I actually try to live by in every engagement.
-
-<div class="values-row">
-  <span class="value-chip">Openness</span>
-  <span class="value-chip">Communication</span>
-  <span class="value-chip">Transparency</span>
-  <span class="value-chip">Quality</span>
-</div>
-
-I prefer honest conversations over polished status updates. If something's off, I'll say so. If I need more context, I'll ask. I'd rather raise a concern early than silently push through something that doesn't feel right.
-
-## Coaching & AI Adoption
-
-<div class="collab-box" style="border-color:rgba(59,168,241,0.3);">
-<span class="collab-icon">✦</span>
-<div class="collab-title" style="color:#3BA8F1;">AI Enablement Hub</div>
-Beyond project work, I run structured AI enablement coaching for developers and teams who want to use AI as a real working tool — with a deep focus on Polarion, and fully transferable beyond. If that's what you're looking for — <a href="/ai-hub" style="color:#3BA8F1;font-weight:600;">explore the AI Enablement Hub →</a>
-</div>
+Honest over polished. If something is off, I'll say so early rather than push through. I prefer raising concerns over silently missing a deadline.

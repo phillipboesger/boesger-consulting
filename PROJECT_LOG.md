@@ -6,6 +6,22 @@ Most recent entries appear first. Older entries may be moved to PROJECT_LOG_ARCH
 
 <!-- entries below -->
 
+## 2026-06-15 — Added Polarion MCP as a new open-source project entry
+
+**Branch**: claude/blissful-ride-g1ieby
+**What was done**: Added the Polarion MCP (https://github.com/phillipboesger/polarion-mcp) as a sixth project card in the homepage Projects & Portfolio section. It is an open-source (MIT) TypeScript MCP server exposing ~210 Polarion REST operations as tools for AI assistants (Claude, ChatGPT, GitHub Copilot, Claude.ai). Entry placed alongside the other GitHub open-source projects (Polarion Code Editor, Polarion Docker).
+**Changed files**:
+- `config.toml` — appended a new `[[params.homepage.projects]]` block for "Polarion MCP" (tagline, description, tags, link, status "Open Source", image `/images/chatGPT.png`)
+- `PROJECT_LOG.md` — recorded this change
+**New knowledge**:
+- Homepage project cards are data-driven from `[[params.homepage.projects]]` blocks in `config.toml`; the rendering template is `layouts/partials/projects.html`
+- `description` is rendered via `| safeHTML`, so use HTML entities like `&amp;` there; `tagline`/`tags` are auto-escaped, so a plain `&` is fine
+- No dedicated MCP/AI-agent icon exists in `/static/images`; reused `chatGPT.png` to signal the AI-integration angle
+**Open / Next steps**:
+- Optional: add a dedicated icon for the Polarion MCP if a more distinct visual is desired (currently shares `chatGPT.png` with avaCopilot)
+
+---
+
 ## 2026-04-22 — Updated About/Services website copy and removed the mistaken PDF-export path
 
 **Branch**: copilot/update-website-for-portfolio
