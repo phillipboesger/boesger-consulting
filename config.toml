@@ -130,6 +130,16 @@ title = "Bösger Digital"
 #   status      – optional badge text, e.g. "Coming soon", "In development"
 
 [[params.homepage.projects]]
+  name = "AI Enablement Hub"
+  tagline = "GitHub Copilot — finally used right"
+  description = "Structured AI coaching for developers who want to use AI as a real working tool — deep focus on Polarion, fully transferable. GitHub Copilot, VS Code, MCP and AI-powered testing. On demand, from €149."
+  image = "/images/chatGPT.png"
+  link = "/ai-hub"
+  linkLabel = "View the Hub"
+  tags = ["AI Coaching", "GitHub Copilot", "Polarion"]
+  status = "On Demand"
+
+[[params.homepage.projects]]
   name = "avaCopilot"
   tagline = "AI Copilot bringing GenAI capabilities into Polarion ALM"
   description = "An AI assistant for Polarion that turns repetitive ALM work into conversational, automated workflows – aligned with my mission to bring less manual work and more AI into Polarion."
@@ -162,8 +172,8 @@ title = "Bösger Digital"
   tagline = "VS Code-style file editor built directly into the Polarion Admin panel"
   description = "Stop checking out. Edit Velocity macros, JSON configs, and XML files directly inside Polarion – no SVN client needed. Powered by the Monaco Engine (the same engine behind VS Code) with syntax highlighting, auto-formatting, and persistent sessions."
   image = "/images/polarion.png"
-  link = "https://github.com/phillipboesger/polarion.code.editor/releases"
-  linkLabel = "Download on GitHub"
+  link = "https://polarion.code.editor.boesger.com"
+  linkLabel = "View Product Page"
   tags = ["Polarion", "Monaco Editor", "Open Source", "Community Extension"]
   status = "Free Download"
 
@@ -172,28 +182,20 @@ title = "Bösger Digital"
   tagline = "Run Polarion ALM in containers – on macOS, Windows & Linux"
   description = "A fully automated Dockerfile &amp; setup scripts that containerize a fresh Polarion ALM installation with zero manual effort – including WebSocket, SVN, PostgreSQL auto-config, and one-click remote debugging. Supports Docker, Podman, and Apple <code>container</code> on Apple Silicon."
   image = "/images/CI_CD.png"
-  link = "https://github.com/phillipboesger/polarion-docker"
-  linkLabel = "View on GitHub"
+  link = "https://polarion-docker.boesger.com"
+  linkLabel = "View Product Page"
   tags = ["Docker", "Polarion", "Open Source", "Community Extension"]
   status = "Open Source"
 
 [[params.homepage.projects]]
-  name = "Polarion MCP"
-  tagline = "Connect Claude, ChatGPT & Copilot directly to Polarion ALM"
-  description = "An open-source MCP server that exposes ~210 Polarion REST operations as tools for AI assistants. Works with Claude Desktop, Claude Code, GitHub Copilot, ChatGPT and Claude.ai – so your AI can create, search and update work items right inside Polarion. Built in TypeScript with stdio, HTTP MCP &amp; REST transports plus Docker deployment."
-  image = "/images/chatGPT.png"
-  link = "https://github.com/phillipboesger/polarion-mcp"
-  linkLabel = "View on GitHub"
-  tags = ["Polarion", "MCP Server", "AI Integration", "Open Source"]
+  name = "Polarion MCP Server"
+  tagline = "Copilot gets direct access to your Polarion backlog"
+  description = "No more copy-pasting between Polarion and VS Code. The MCP Server connects GitHub Copilot directly to your work items — read tickets, understand context, write implementation-ready code. 271 tools, zero switching."
+  image = "/images/n8n.png"
+  link = "https://polarion-mcp.boesger.com"
+  linkLabel = "View Product Page"
+  tags = ["MCP", "AI Integration", "Open Source"]
   status = "Open Source"
-
-[params.homepage.comingSoon]
-  ideas = [
-    "Custom Permissions Plugin for Polarion",
-    "GitHub Workflow for lean Polarion releases with full unit and UI test coverage on every build",
-    "AI Platform Integrations & Agent Frameworks directly inside Polarion",
-    "… and much more"
-  ]
 
 [params.homepage.social]
   linkedin = "https://www.linkedin.com/in/phillip-boesger-90691215a/"
