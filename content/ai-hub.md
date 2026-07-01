@@ -1,6 +1,6 @@
 ---
 title: "AI Enablement Hub"
-description: "AI coaching for Polarion developers – GitHub Copilot, VS Code, MCP and AI-powered testing. Available on demand."
+description: "AI coaching for developers — deep focus on Polarion, fully applicable beyond. GitHub Copilot, VS Code, MCP and AI-powered testing. Available on demand."
 ---
 
 <style>
@@ -77,7 +77,7 @@ article.prose { max-width: 100% !important; padding: 0 !important; }
 <div class="hub-hero">
 <div class="hub-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg> AI Enablement Hub · On Demand</div>
 <h1 class="hub-h1">GitHub Copilot.<br><span>Finally used right.</span></h1>
-<p class="hub-sub">Structured AI coaching for Polarion developers — from initial setup to real test automation with AI. Proven in production, now available on demand.</p>
+<p class="hub-sub">Structured AI coaching for developers who want to work smarter — with a deep focus on Polarion, and fully applicable beyond. From initial setup to real test automation with AI. Proven in production, now available on demand.</p>
 <div class="hub-cta-row"><a href="mailto:consulting@boesger.com?subject=AI%20Enablement%20Hub%20%E2%80%93%20Access" class="btn-primary">Get Access — from €149</a> <a href="mailto:consulting@boesger.com?subject=AI%20Enablement%20Hub%20%E2%80%93%20Team%20Inquiry" class="btn-outline">Request Team Package</a></div>
 </div>
 
@@ -94,10 +94,10 @@ article.prose { max-width: 100% !important; padding: 0 !important; }
 
 <div class="hub-section">
 <h2 class="hub-section-title">Who is the Hub for?</h2>
-<p class="hub-section-sub">Whether you're an individual developer or a full engineering team — the Hub picks up exactly where most Copilot installations leave off.</p>
+<p class="hub-section-sub">Whether you're an individual developer or a full engineering team — the Hub picks up exactly where most Copilot installations leave off. Built on Polarion workflows, applicable to any complex toolchain.</p>
 <div class="hub-audience">
-<div class="hub-card"><span class="hub-card-icon">👤</span><div class="hub-card-title">Polarion Developers</div><p class="hub-card-text">You've got Copilot installed but aren't using it systematically. Here you get the workflows, prompts and setups that actually make a difference — in your daily Polarion work.</p></div>
-<div class="hub-card"><span class="hub-card-icon">🏢</span><div class="hub-card-title">Companies &amp; Teams</div><p class="hub-card-text">Your team builds with Polarion and should be using AI productively — not just experimenting. The program delivers a standardised baseline for everyone, measurable via survey and a final audit.</p></div>
+<div class="hub-card"><span class="hub-card-icon">👤</span><div class="hub-card-title">Developers</div><p class="hub-card-text">You've got Copilot installed but aren't using it systematically. Here you get the workflows, prompts and setups that actually make a difference — in your daily work. Deep examples from Polarion, transferable everywhere.</p></div>
+<div class="hub-card"><span class="hub-card-icon">🏢</span><div class="hub-card-title">Companies &amp; Teams</div><p class="hub-card-text">Your team should be using AI productively — not just experimenting. The program delivers a standardised baseline for everyone, measurable via survey and a final audit. Works across development teams, regardless of toolchain.</p></div>
 </div>
 </div>
 

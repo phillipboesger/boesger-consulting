@@ -204,5 +204,5 @@ I prefer honest conversations over polished status updates. If something's off, 
 <div class="collab-box" style="border-color:rgba(59,168,241,0.3);">
 <span class="collab-icon">✦</span>
 <div class="collab-title" style="color:#3BA8F1;">AI Enablement Hub</div>
-Beyond project work, I run structured AI enablement coaching for Polarion development teams. If that's what you're looking for — <a href="/ai-hub" style="color:#3BA8F1;font-weight:600;">explore the AI Enablement Hub →</a>
+Beyond project work, I run structured AI enablement coaching for developers and teams who want to use AI as a real working tool — with a deep focus on Polarion, and fully transferable beyond. If that's what you're looking for — <a href="/ai-hub" style="color:#3BA8F1;font-weight:600;">explore the AI Enablement Hub →</a>
 </div>

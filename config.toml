@@ -132,7 +132,7 @@ title = "Bösger Digital"
 [[params.homepage.projects]]
   name = "AI Enablement Hub"
   tagline = "GitHub Copilot — finally used right"
-  description = "Structured AI coaching for Polarion developers: setup, debugging workflows, 800+ AI-generated unit tests, Playwright UI tests, and direct MCP integration. On demand, from €149."
+  description = "Structured AI coaching for developers who want to use AI as a real working tool — deep focus on Polarion, fully transferable. GitHub Copilot, VS Code, MCP and AI-powered testing. On demand, from €149."
   image = "/images/chatGPT.png"
   link = "/ai-hub"
   linkLabel = "View the Hub"
